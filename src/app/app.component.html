@@ -54,11 +54,24 @@
 <!-- ___________________________________________________________ -->
 
 <div class="services">
-  <h1>{{ serviceBoxes.seviceHeader }}</h1>
+  <h1>{{ servicesHead }}</h1>
   <span class="headerline"></span>
 
   <div class="boxes">
-    <div class="divcontent divcontent1" style="border: none">
+    <div class="divcontent divcontent2" *ngFor="let service of ourServices">
+      <div class="flex">
+        <img [src]="service.img" />
+        <h2>{{ service.head }}</h2>
+      </div>
+      <p>
+        {{ service.content }}
+      </p>
+      <a href="#">{{ service.link }}</a>
+      <button>{{ service.button }}</button>
+      <!-- <button ngClass="divcontent7">{{ service.button }}</button> -->
+    </div>
+
+    <!-- <div class="divcontent divcontent1" style="border: none">
       <h1 style="text-align: left; line-height: 70px; font-weight: 700">
         {{ serviceBoxes.seviceBoxHead }} <br />
         <span style="font-weight: bolder; font-size: 60px">
@@ -133,611 +146,666 @@
       </h2>
       <button>{{ serviceBoxes.serviceBox7.serviceBox7Btn }}</button>
     </div>
-  </div>
-</div>
-
-<!-- ___________________________________________________________ -->
-
-<div class="experience">
-  <div class="contentexp">
-    <h2>{{ experience.exprContent.exprContentHead }}</h2>
-    <p>
-      {{ experience.exprContent.exprContentPara }}
-    </p>
-    <button>{{ experience.exprContent.exprContentBtn }}</button>
+  </div> -->
   </div>
 
-  <span>
-    <img [src]="experience.exprContent.exprUpperImg" height="490" />
-  </span>
+  <!-- ___________________________________________________________ -->
 
-  <div class="numberexp">
-    <div class="fulldiv1">
-      <div class="div1">
-        <img [src]="experience.exprProduct.exprProduct1Img" />
-        <h1>{{ experience.exprProduct.exprProduct1Head }}</h1>
-        <h5>{{ experience.exprProduct.exprProduct1Type }}</h5>
-      </div>
-      <div class="div2">
-        <img [src]="experience.exprProduct.exprProduct2Img" />
-        <h1>{{ experience.exprProduct.exprProduct2Head }}</h1>
-        <h5>{{ experience.exprProduct.exprProduct2Type }}</h5>
-      </div>
-    </div>
-
-    <div class="fulldiv2">
-      <div class="div3">
-        <img [src]="experience.exprProduct.exprProduct3Img" />
-        <h1>{{ experience.exprProduct.exprProduct3Head }}</h1>
-        <h5>{{ experience.exprProduct.exprProduct3Type }}</h5>
-      </div>
-      <div class="div4">
-        <img [src]="experience.exprProduct.exprProduct4Img" />
-        <h1>{{ experience.exprProduct.exprProduct4Head }}</h1>
-        <h5>{{ experience.exprProduct.exprProduct4Type }}</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ____________________________________________________________________ -->
-
-<h1 style="text-align: center; margin: 40px; font-size: 2rem; margin-bottom: 0">
-  {{ technology.technologyHead }}
-</h1>
-<span class="headerline"></span>
-<div class="row">
-  <div class="menu">
-    <ul>
-      <li class="active">
-        <a href="">{{ technology.technologyMenuOption.techMenuWeb }}</a>
-      </li>
-      <li>
-        <a href="">{{ technology.technologyMenuOption.techMenuWeb }}</a>
-      </li>
-      <li>
-        <a href="">{{ technology.technologyMenuOption.techMenuMobile }}</a>
-      </li>
-      <li>
-        <a href="">{{ technology.technologyMenuOption.techMenuDesktop }}</a>
-      </li>
-      <li>
-        <a href="">{{ technology.technologyMenuOption.techMenuPlateform }}</a>
-      </li>
-      <li>
-        <a href="">{{ technology.technologyMenuOption.techMenuDatabase }}</a>
-      </li>
-      <li>
-        <a href="">{{ technology.technologyMenuOption.techMenuBigData }}</a>
-      </li>
-      <li>
-        <a href="">{{ technology.technologyMenuOption.techMenuMachineLern }}</a>
-      </li>
-      <li>
-        <a href="">{{ technology.technologyMenuOption.techMenuDevOps }}</a>
-      </li>
-      <li>
-        <a href="">{{ technology.technologyMenuOption.techMenuClouds }}</a>
-      </li>
-    </ul>
-  </div>
-  <div class="language">
-    <div class="web">
-      <h1>Web</h1>
-      <h2 style="margin-top: 20px; font-weight: 400">
-        {{ technology.technologyLanguage.techBackHead }}
-      </h2>
-      <div class="backend">
-        <div class="ror">
-          <img [src]="technology.technologyLanguage.techRoRImg" />
-          <h3>{{ technology.technologyLanguage.techRoRHead }}</h3>
-        </div>
-        <div class="python">
-          <img [src]="technology.technologyLanguage.techPythonImg" />
-          <h3>{{ technology.technologyLanguage.techPythonHead }}</h3>
-        </div>
-        <div class="node">
-          <img [src]="technology.technologyLanguage.techNodeImg" />
-          <h3>{{ technology.technologyLanguage.techNodeHead }}</h3>
-        </div>
-        <div class="php">
-          <img [src]="technology.technologyLanguage.techPhpImg" />
-          <h3>{{ technology.technologyLanguage.techPhpHead }}</h3>
-        </div>
-        <div class="java">
-          <img [src]="technology.technologyLanguage.techJavaImg" />
-          <h3>{{ technology.technologyLanguage.techJavaHead }}</h3>
-        </div>
-        <div class="go">
-          <img [src]="technology.technologyLanguage.techGoImg" />
-          <h3>{{ technology.technologyLanguage.techGoHead }}</h3>
-        </div>
-      </div>
-
-      <h2>{{ technology.technologyLanguage.techFrontHead }}</h2>
-      <div class="frontend">
-        <div class="react">
-          <img [src]="technology.technologyLanguage.techReactImg" />
-          <h3>{{ technology.technologyLanguage.techReactHead }}</h3>
-        </div>
-        <div class="angular">
-          <img [src]="technology.technologyLanguage.techAngularImg" />
-          <h3>{{ technology.technologyLanguage.techAngularHead }}</h3>
-        </div>
-        <div class="typescipt">
-          <img [src]="technology.technologyLanguage.techTypeScriptImg" />
-          <h3>{{ technology.technologyLanguage.techTypeScriptHead }}</h3>
-        </div>
-        <div class="vue">
-          <img [src]="technology.technologyLanguage.techVueImg" />
-          <h3>{{ technology.technologyLanguage.techVueHead }}</h3>
-        </div>
-        <div class="mateor">
-          <img [src]="technology.technologyLanguage.techMateorImg" />
-          <h3>{{ technology.technologyLanguage.techMateorHead }}</h3>
-        </div>
-        <div class="javascript">
-          <img [src]="technology.technologyLanguage.techJavaScriptImg" />
-          <h3>{{ technology.technologyLanguage.techJavaScriptHead }}</h3>
-        </div>
-        <div class="html">
-          <img [src]="technology.technologyLanguage.techHtmlImg" />
-          <h3>{{ technology.technologyLanguage.techHtmlHead }}</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ____________________________________________________________________ -->
-
-<h1 class="taglinewhyhead">{{ whyTagline.whyTaglineHead }}</h1>
-<span class="headerline"></span>
-<p class="taglinewhyp">
-  {{ whyTagline.whyTaglinePara }}
-</p>
-<div class="empowers">
-  <div class="empowerbox">
-    <div class="imgnumflex">
-      <img [src]="whyTagline.whyTagBox1.progressiveImg" />
-      <h1>{{ whyTagline.whyTagBox1.progressiveNum }}</h1>
-    </div>
-    <h2>{{ whyTagline.whyTagBox1.progressiveHead }}</h2>
-    <p>
-      {{ whyTagline.whyTagBox1.progressivePara }}
-    </p>
-  </div>
-  <div class="empowerbox">
-    <div class="imgnumflex">
-      <img [src]="whyTagline.whyTagBox2.efficientImg" />
-      <h1>{{ whyTagline.whyTagBox2.efficientNum }}</h1>
-    </div>
-    <h2>{{ whyTagline.whyTagBox2.efficientHead }}</h2>
-    <p>
-      {{ whyTagline.whyTagBox2.efficientPara }}
-    </p>
-  </div>
-  <div class="empowerbox">
-    <div class="imgnumflex">
-      <img [src]="whyTagline.whyTagBox3.flexibleImg" />
-      <h1>{{ whyTagline.whyTagBox3.flexibleNum }}</h1>
-    </div>
-    <h2>{{ whyTagline.whyTagBox3.flexibleHead }}</h2>
-    <p>
-      {{ whyTagline.whyTagBox3.flexiblePara }}
-    </p>
-  </div>
-  <div class="empowerbox">
-    <div class="imgnumflex">
-      <img [src]="whyTagline.whyTagBox4.costEffectiveImg" />
-      <h1>{{ whyTagline.whyTagBox4.costEffectiveNum }}</h1>
-    </div>
-    <h2>{{ whyTagline.whyTagBox4.costEffectiveHead }}</h2>
-    <p>
-      {{ whyTagline.whyTagBox4.costEffectivePara }}
-    </p>
-  </div>
-  <div class="empowerbox">
-    <div class="imgnumflex">
-      <img [src]="whyTagline.whyTagBox5.consistentImg" />
-      <h1>{{ whyTagline.whyTagBox5.consistentNum }}</h1>
-    </div>
-    <h2>{{ whyTagline.whyTagBox5.consistentHead }}</h2>
-    <p>
-      {{ whyTagline.whyTagBox5.consistentPara }}
-    </p>
-  </div>
-  <div class="empowerbox lastempowerbox">
-    <h1>
-      <span>{{ whyTagline.whyTagBox6.empowerSpan1 }} </span> Your
-      <span>{{ whyTagline.whyTagBox6.empowerSpan2 }}</span>
-      {{ whyTagline.whyTagBox6.empowerHead }}
-    </h1>
-    <button>{{ whyTagline.whyTagBox6.empowerBtn }}</button>
-  </div>
-</div>
-
-<!-- ____________________________________________________________________ -->
-
-<div class="reviews">
-  <div class="reviewword">
-    <h1>{{ worldClient.worldClientHead }}</h1>
-    <span class="headerline"></span>
-    <p>
-      {{ worldClient.worldClientPara1 }}
-    </p>
-    <p>
-      {{ worldClient.worldClientPara2 }}
-    </p>
-  </div>
-  <div class="reviewsboxes">
-    <div class="revbox">
-      <div class="rating">
-        <h3>{{ reviewBox.reviewRate }}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-      </div>
-
-      <p>{{ reviewBox.reviewWord }}</p>
-      <small>{{ reviewBox.reviewCompany }}</small>
-
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>&nbsp;
-        <p>{{ reviewBox.reviewVeried }}</p>
-      </div>
-    </div>
-
-    <div class="revbox">
-      <div class="rating">
-        <h3>{{ reviewBox.reviewRate }}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-      </div>
-
+  <div class="experience">
+    <div class="contentexp">
+      <h2>{{ experience.exprContent.exprContentHead }}</h2>
       <p>
-        {{ reviewBox.reviewWord }}
+        {{ experience.exprContent.exprContentPara }}
       </p>
-      <small>{{ reviewBox.reviewCompany }}</small>
-
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>
-        <p>{{ reviewBox.reviewVeried }}</p>
-      </div>
+      <button>{{ experience.exprContent.exprContentBtn }}</button>
     </div>
 
-    <div class="revbox">
-      <div class="rating">
-        <h3>{{ reviewBox.reviewRate }}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
+    <span>
+      <img [src]="experience.exprContent.exprUpperImg" height="490" />
+    </span>
+
+    <div class="numberexp">
+      <div class="fulldiv1">
+        <div class="div1">
+          <img [src]="experience.exprProduct.exprProduct1Img" />
+          <h1>{{ experience.exprProduct.exprProduct1Head }}</h1>
+          <h5>{{ experience.exprProduct.exprProduct1Type }}</h5>
+        </div>
+        <div class="div2">
+          <img [src]="experience.exprProduct.exprProduct2Img" />
+          <h1>{{ experience.exprProduct.exprProduct2Head }}</h1>
+          <h5>{{ experience.exprProduct.exprProduct2Type }}</h5>
         </div>
       </div>
 
-      <p>{{ reviewBox.reviewWord }}</p>
-      <small>{{ reviewBox.reviewCompany }}</small>
-
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>
-        <p>{{ reviewBox.reviewVeried }}</p>
-      </div>
-    </div>
-
-    <div class="revbox">
-      <div class="rating">
-        <h3>{{ reviewBox.reviewRate }}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
+      <div class="fulldiv2">
+        <div class="div3">
+          <img [src]="experience.exprProduct.exprProduct3Img" />
+          <h1>{{ experience.exprProduct.exprProduct3Head }}</h1>
+          <h5>{{ experience.exprProduct.exprProduct3Type }}</h5>
         </div>
-      </div>
-
-      <p>
-        {{ reviewBox.reviewWord }}
-      </p>
-      <small>{{ reviewBox.reviewCompany }}</small>
-
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>
-        <p>{{ reviewBox.reviewVeried }}</p>
-      </div>
-    </div>
-
-    <div class="revbox">
-      <div class="rating">
-        <h3>{{ reviewBox.reviewRate }}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
+        <div class="div4">
+          <img [src]="experience.exprProduct.exprProduct4Img" />
+          <h1>{{ experience.exprProduct.exprProduct4Head }}</h1>
+          <h5>{{ experience.exprProduct.exprProduct4Type }}</h5>
         </div>
-      </div>
-
-      <p>
-        {{ reviewBox.reviewWord }}
-      </p>
-      <small>{{ reviewBox.reviewCompany }}</small>
-
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>
-        <p>{{ reviewBox.reviewVeried }}</p>
-      </div>
-    </div>
-
-    <div class="revbox">
-      <div class="rating">
-        <h3>{{ reviewBox.reviewRate }}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-      </div>
-
-      <p>
-        {{ reviewBox.reviewWord }}
-      </p>
-      <small>{{ reviewBox.reviewCompany }}</small>
-
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>
-        <p>{{ reviewBox.reviewVeried }}</p>
       </div>
     </div>
   </div>
-</div>
 
-<!-- ____________________________________________________________________ -->
+  <!-- ____________________________________________________________________ -->
 
-<div class="awards">
-  <!-- <div class="awardhead"> -->
-  <h1>
-    {{ awards.awardHead }}
+  <h1
+    style="text-align: center; margin: 40px; font-size: 2rem; margin-bottom: 0"
+  >
+    {{ technology.technologyHead }}
   </h1>
-  <!-- </div> -->
-  <div class="awardimage">
-    <img [src]="awards.award1" height="160" width="160" />
-    <img [src]="awards.award2" height="160" width="160" />
-    <img [src]="awards.award3" height="160" width="160" />
-    <img [src]="awards.award4" height="160" width="160" />
-    <img [src]="awards.award5" height="160" width="160" />
-  </div>
-</div>
-
-<!-- ____________________________________________________________________ -->
-
-<div class="blogs">
-  <h1>{{ blogHeading }} </h1>
   <span class="headerline"></span>
-  <div class="bloggers">
-    <div class="blog">
-      <img [src]="blog1.blogImg" />
-      <div style="display: flex; justify-content: space-between">
-        <button>{{ blog1.blogLanguage }}</button>
-        <p>{{ blog1.blogDate }}</p>
-      </div>
-      <h3>{{ blog1.blogDate }}</h3>
-      <p>
-        
-        {{ blog1.blogContent }}
-      </p>
-      <a href="#">{{ blog1.blogLink }}</a>
-    </div>
-    <div class="blog">
-      <img [src]="blog2.blogImg" />
-      <div style="display: flex; justify-content: space-between">
-        <button>{{ blog2.blogLanguage }}</button>
-        <p>{{ blog2.blogDate }}</p>
-      </div>
-      <h3>{{ blog2.blogDate }}</h3>
-      <p>
-        
-      </p>
-      <a href="#"></a>
-    </div>
-    <div class="blog">
-      <img [src]="blog3.blogImg" />
-      <div style="display: flex; justify-content: space-between">
-        <button>{{ blog3.blogLanguage }}</button>
-        <p>{{ blog3.blogDate }}</p>
-      </div>
-      <h3>{{ blog3.blogDate }}</h3>
-      <p>
-        
-      </p>
-      <a href="#"></a>
-    </div>
-  </div>
-</div>
-
-<!-- ____________________________________________________________________ -->
-
-<div class="contactus">
-  <div class="formdetail">
-    <div class="address">
-      <h4>{{ contactForm.contactHead }}</h4>
-
-      <div class="place">
-        <h6>{{ contactForm.contactCountry1 }}</h6>
-        <p class="add-city">
-          {{ contactForm.contactPlace1 }}
-        </p>
-        <a href="tel:+91 99138 08285" class="contact mobile-no"
-          ><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp; {{ contactForm.contactMobile1 }}</a
-        >
-      </div>
-
-      <div class="place">
-        <h6>{{ contactForm.contactCountry2 }}</h6>
-        <p class="add-city">{{ contactForm.contactPlace2 }}</p>
-        <a href="tel: +1 (404) 483-3388" class="contact mobile-no"
-          ><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;{{ contactForm.contactMobile2 }}</a
-        >
-      </div>
-
-      <div class="place">
-        <h6>{{ contactForm.contactCountry3 }}</h6>
-        <p class="add-city">
-          {{ contactForm.contactPlace3 }}
-        </p>
-        <a href="tel:+44 78240 75400" class="contact mobile-no"
-          ><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;{{ contactForm.contactMobile3 }}</a
-        >
-      </div>
-
-      <div class="place">
-        <a href="mailto:solutions@taglineinfotech.com" class="mail"
-          ><i class="bi bi-envelope-fill"></i></a
-        >
-      </div>
-    </div>
-  </div>
-  <div class="forms">
-    <h1>Get Your Free Quote Today</h1>
-    <input type="text" placeholder="Full Name" /><br />
-    <input type="text" placeholder="Phone" /><br />
-    <input type="email" placeholder="Email" /><br />
-    <textarea placeholder="Message" rows="3"></textarea><br />
-    <button>Send Message</button>
-  </div>
-</div>
-
-<!-- ____________________________________________________________________ -->
-
-<div class="footer">
-  <div class="firstfooter">
-    <div class="cont1">
-      <h3>{{ footer.footerTop }}</h3>
-      <p>
-        {{ footer.footerShare }}
-        
-        <span style="color: #d66f37">{{ footer.footerSpan }}</span>
-      </p>
-    </div>
-    <div class="cont2">
-      <input
-        type="email"
-        [(ngModel)]="footerEmailSend"
-        placeholder="Email"
-      /><span><button>{{ footerSubscribeBtn }}</button></span>
-      <p>{{ footerEmailSend }}</p>
-    </div>
-  </div>
-  <div class="division">
-    <div>
-      <div class="hr">
-        <h3>{{ hrInquiry.hrHead }}</h3>
-        <ul>
-          <li>
-            <a href=""
-              ><i class="bi bi-telephone-fill"></i>&nbsp;
-              {{ hrInquiry.hrEmail }}</a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><i class="bi bi-envelope-fill"></i>&nbsp; {{ hrInquiry.hrMobile }}</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="sales">
-        <h3>{{ salesInquiry.salesHead }}</h3>
-        <ul>
-          <li><a href=""> {{ salesInquiry.salesEmail }}</a></li>
-          <li><a href=""> {{ salesInquiry.salesCompany }}</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="help">
-      <h3>{{ help.helpHead }}</h3>
+  <div class="row">
+    <div class="menu">
       <ul>
-        <li>
-          <a href=""><i class="bi bi-telephone-fill"></i>&nbsp;{{ help.helpCareer }}</a>
+        <li class="active">
+          <a href="">{{ technology.technologyMenuOption.techMenuWeb }}</a>
         </li>
         <li>
-          <a href=""><i class="bi bi-file-person-fill"></i>&nbsp;{{ help.helpAbout }}</a>
+          <a href="">{{ technology.technologyMenuOption.techMenuWeb }}</a>
         </li>
         <li>
-          <a href=""><i class="bi bi-envelope-fill"></i>&nbsp;{{ help.helpContact }}</a>
+          <a href="">{{ technology.technologyMenuOption.techMenuMobile }}</a>
         </li>
         <li>
-          <a href=""><i class="bi bi-camera-video"></i>&nbsp;{{ help.helpBlog }}</a>
+          <a href="">{{ technology.technologyMenuOption.techMenuDesktop }}</a>
         </li>
         <li>
-          <a href=""
-            ><i class="bi bi-file-earmark-lock2-fill"></i>&nbsp;{{ help.helpPrivacy }}
-            </a
+          <a href="">{{ technology.technologyMenuOption.techMenuPlateform }}</a>
+        </li>
+        <li>
+          <a href="">{{ technology.technologyMenuOption.techMenuDatabase }}</a>
+        </li>
+        <li>
+          <a href="">{{ technology.technologyMenuOption.techMenuBigData }}</a>
+        </li>
+        <li>
+          <a href="">{{
+            technology.technologyMenuOption.techMenuMachineLern
+          }}</a>
+        </li>
+        <li>
+          <a href="">{{ technology.technologyMenuOption.techMenuDevOps }}</a>
+        </li>
+        <li>
+          <a href="">{{ technology.technologyMenuOption.techMenuClouds }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="language">
+      <div class="web">
+        <h1>Web</h1>
+        <h2 style="margin-top: 20px; font-weight: 400">
+          {{ technology.technologyLanguage.techBackHead }}
+        </h2>
+        <div class="backend">
+          <div class="ror">
+            <img [src]="technology.technologyLanguage.techRoRImg" />
+            <h3>{{ technology.technologyLanguage.techRoRHead }}</h3>
+          </div>
+          <div class="python">
+            <img [src]="technology.technologyLanguage.techPythonImg" />
+            <h3>{{ technology.technologyLanguage.techPythonHead }}</h3>
+          </div>
+          <div class="node">
+            <img [src]="technology.technologyLanguage.techNodeImg" />
+            <h3>{{ technology.technologyLanguage.techNodeHead }}</h3>
+          </div>
+          <div class="php">
+            <img [src]="technology.technologyLanguage.techPhpImg" />
+            <h3>{{ technology.technologyLanguage.techPhpHead }}</h3>
+          </div>
+          <div class="java">
+            <img [src]="technology.technologyLanguage.techJavaImg" />
+            <h3>{{ technology.technologyLanguage.techJavaHead }}</h3>
+          </div>
+          <div class="go">
+            <img [src]="technology.technologyLanguage.techGoImg" />
+            <h3>{{ technology.technologyLanguage.techGoHead }}</h3>
+          </div>
+        </div>
+
+        <h2>{{ technology.technologyLanguage.techFrontHead }}</h2>
+        <div class="frontend">
+          <div class="react">
+            <img [src]="technology.technologyLanguage.techReactImg" />
+            <h3>{{ technology.technologyLanguage.techReactHead }}</h3>
+          </div>
+          <div class="angular">
+            <img [src]="technology.technologyLanguage.techAngularImg" />
+            <h3>{{ technology.technologyLanguage.techAngularHead }}</h3>
+          </div>
+          <div class="typescipt">
+            <img [src]="technology.technologyLanguage.techTypeScriptImg" />
+            <h3>{{ technology.technologyLanguage.techTypeScriptHead }}</h3>
+          </div>
+          <div class="vue">
+            <img [src]="technology.technologyLanguage.techVueImg" />
+            <h3>{{ technology.technologyLanguage.techVueHead }}</h3>
+          </div>
+          <div class="mateor">
+            <img [src]="technology.technologyLanguage.techMateorImg" />
+            <h3>{{ technology.technologyLanguage.techMateorHead }}</h3>
+          </div>
+          <div class="javascript">
+            <img [src]="technology.technologyLanguage.techJavaScriptImg" />
+            <h3>{{ technology.technologyLanguage.techJavaScriptHead }}</h3>
+          </div>
+          <div class="html">
+            <img [src]="technology.technologyLanguage.techHtmlImg" />
+            <h3>{{ technology.technologyLanguage.techHtmlHead }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ____________________________________________________________________ -->
+
+  <h1 class="taglinewhyhead">{{ whyTagline.whyTaglineHead }}</h1>
+  <span class="headerline"></span>
+  <p class="taglinewhyp">
+    {{ whyTagline.whyTaglinePara }}
+  </p>
+  <div class="empowers">
+    <div class="empowerbox" *ngFor="let tagbox of whyTaglineBox">
+      <div class="imgnumflex">
+        <img [src]="tagbox.img" />
+        <h1>{{ tagbox.num }}</h1>
+      </div>
+      <h2>{{ tagbox.head }}</h2>
+      <p>
+        {{ tagbox.content }}
+      </p>
+      <!-- <button>{{ tagbox.content }}</button> -->
+    </div>
+    <!-- <div class="empowerbox">
+      <div class="imgnumflex">
+        <img [src]="whyTagline.whyTagBox2.efficientImg" />
+        <h1>{{ whyTagline.whyTagBox2.efficientNum }}</h1>
+      </div>
+      <h2>{{ whyTagline.whyTagBox2.efficientHead }}</h2>
+      <p>
+        {{ whyTagline.whyTagBox2.efficientPara }}
+      </p>
+    </div>
+    <div class="empowerbox">
+      <div class="imgnumflex">
+        <img [src]="whyTagline.whyTagBox3.flexibleImg" />
+        <h1>{{ whyTagline.whyTagBox3.flexibleNum }}</h1>
+      </div>
+      <h2>{{ whyTagline.whyTagBox3.flexibleHead }}</h2>
+      <p>
+        {{ whyTagline.whyTagBox3.flexiblePara }}
+      </p>
+    </div>
+    <div class="empowerbox">
+      <div class="imgnumflex">
+        <img [src]="whyTagline.whyTagBox4.costEffectiveImg" />
+        <h1>{{ whyTagline.whyTagBox4.costEffectiveNum }}</h1>
+      </div>
+      <h2>{{ whyTagline.whyTagBox4.costEffectiveHead }}</h2>
+      <p>
+        {{ whyTagline.whyTagBox4.costEffectivePara }}
+      </p>
+    </div>
+    <div class="empowerbox">
+      <div class="imgnumflex">
+        <img [src]="whyTagline.whyTagBox5.consistentImg" />
+        <h1>{{ whyTagline.whyTagBox5.consistentNum }}</h1>
+      </div>
+      <h2>{{ whyTagline.whyTagBox5.consistentHead }}</h2>
+      <p>
+        {{ whyTagline.whyTagBox5.consistentPara }}
+      </p>
+    </div>
+    <div class="empowerbox lastempowerbox">
+      <h1>
+        <span>{{ whyTagline.whyTagBox6.empowerSpan1 }} </span> Your
+        <span>{{ whyTagline.whyTagBox6.empowerSpan2 }}</span>
+        {{ whyTagline.whyTagBox6.empowerHead }}
+      </h1>
+      <button>{{ whyTagline.whyTagBox6.empowerBtn }}</button>
+    </div> -->
+  </div>
+
+  <!-- ____________________________________________________________________ -->
+
+  <div class="reviews">
+    <div class="reviewword">
+      <h1>{{ worldClient.worldClientHead }}</h1>
+      <span class="headerline"></span>
+      <p>
+        {{ worldClient.worldClientPara1 }}
+      </p>
+      <p>
+        {{ worldClient.worldClientPara2 }}
+      </p>
+    </div>
+    <div class="reviewsboxes">
+      <div class="revbox">
+        <div class="rating">
+          <h3>{{ reviewBox.reviewRate }}</h3>
+          <div class="icon">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+
+        <p>{{ reviewBox.reviewWord }}</p>
+        <small>{{ reviewBox.reviewCompany }}</small>
+
+        <div class="verified">
+          <i class="bi bi-patch-check-fill"></i>&nbsp;
+          <p>{{ reviewBox.reviewVeried }}</p>
+        </div>
+      </div>
+
+      <div class="revbox">
+        <div class="rating">
+          <h3>{{ reviewBox.reviewRate }}</h3>
+          <div class="icon">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+
+        <p>
+          {{ reviewBox.reviewWord }}
+        </p>
+        <small>{{ reviewBox.reviewCompany }}</small>
+
+        <div class="verified">
+          <i class="bi bi-patch-check-fill"></i>
+          <p>{{ reviewBox.reviewVeried }}</p>
+        </div>
+      </div>
+
+      <div class="revbox">
+        <div class="rating">
+          <h3>{{ reviewBox.reviewRate }}</h3>
+          <div class="icon">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+
+        <p>{{ reviewBox.reviewWord }}</p>
+        <small>{{ reviewBox.reviewCompany }}</small>
+
+        <div class="verified">
+          <i class="bi bi-patch-check-fill"></i>
+          <p>{{ reviewBox.reviewVeried }}</p>
+        </div>
+      </div>
+
+      <div class="revbox">
+        <div class="rating">
+          <h3>{{ reviewBox.reviewRate }}</h3>
+          <div class="icon">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+
+        <p>
+          {{ reviewBox.reviewWord }}
+        </p>
+        <small>{{ reviewBox.reviewCompany }}</small>
+
+        <div class="verified">
+          <i class="bi bi-patch-check-fill"></i>
+          <p>{{ reviewBox.reviewVeried }}</p>
+        </div>
+      </div>
+
+      <div class="revbox">
+        <div class="rating">
+          <h3>{{ reviewBox.reviewRate }}</h3>
+          <div class="icon">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+
+        <p>
+          {{ reviewBox.reviewWord }}
+        </p>
+        <small>{{ reviewBox.reviewCompany }}</small>
+
+        <div class="verified">
+          <i class="bi bi-patch-check-fill"></i>
+          <p>{{ reviewBox.reviewVeried }}</p>
+        </div>
+      </div>
+
+      <div class="revbox">
+        <div class="rating">
+          <h3>{{ reviewBox.reviewRate }}</h3>
+          <div class="icon">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+
+        <p>
+          {{ reviewBox.reviewWord }}
+        </p>
+        <small>{{ reviewBox.reviewCompany }}</small>
+
+        <div class="verified">
+          <i class="bi bi-patch-check-fill"></i>
+          <p>{{ reviewBox.reviewVeried }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ____________________________________________________________________ -->
+
+  <div class="awards">
+    <!-- <div class="awardhead"> -->
+    <h1>
+      {{ awards.awardHead }}
+    </h1>
+    <!-- </div> -->
+    <div class="awardimage">
+      <img [src]="awards.award1" height="160" width="160" />
+      <img [src]="awards.award2" height="160" width="160" />
+      <img [src]="awards.award3" height="160" width="160" />
+      <img [src]="awards.award4" height="160" width="160" />
+      <img [src]="awards.award5" height="160" width="160" />
+    </div>
+  </div>
+
+  <!-- ____________________________________________________________________ -->
+
+  <div class="blogs">
+    <h1>{{ blogHeading }}</h1>
+    <span class="headerline"></span>
+    <div class="bloggers">
+      <div class="blog" *ngFor="let blog of blogs">
+        <img [src]="blog.img" />
+        <div style="display: flex; justify-content: space-between">
+          <button>{{ blog.language }}</button>
+          <p>{{ blog.date }}</p>
+        </div>
+        <h3>{{ blog.title }}</h3>
+        <p>
+          {{ blog.content }}
+        </p>
+        <a href="#">{{ blog.link }}</a>
+      </div>
+      <!-- <div class="blog">
+        <img [src]="blog2.blogImg" />
+        <div style="display: flex; justify-content: space-between">
+          <button>{{ blog2.blogLanguage }}</button>
+          <p>{{ blog2.blogDate }}</p>
+        </div>
+        <h3>{{ blog2.blogDate }}</h3>
+        <p></p>
+        <a href="#"></a>
+      </div>
+      <div class="blog">
+        <img [src]="blog3.blogImg" />
+        <div style="display: flex; justify-content: space-between">
+          <button>{{ blog3.blogLanguage }}</button>
+          <p>{{ blog3.blogDate }}</p>
+        </div>
+        <h3>{{ blog3.blogDate }}</h3>
+        <p></p>
+        <a href="#"></a>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- ____________________________________________________________________ -->
+
+  <div class="contactus">
+    <div class="formdetail">
+      <div class="address">
+        <h4>{{ contactForm.contactHead }}</h4>
+
+        <div class="place">
+          <h6>{{ contactForm.contactCountry1 }}</h6>
+          <p class="add-city">
+            {{ contactForm.contactPlace1 }}
+          </p>
+          <a href="tel:+91 99138 08285" class="contact mobile-no"
+            ><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;
+            {{ contactForm.contactMobile1 }}</a
           >
-        </li>
-        <li>
-          <a href=""><i class="bi bi-diagram-3-fill"></i>&nbsp;{{ help.helpSitemap }}</a>
-        </li>
-      </ul>
-    </div>
-    <div class="service">
-      <h3>{{ services.servicesHead }}</h3>
-      <ul>
-        <li><a href="">{{ services.servicesMobile }}</a></li>
-        <li><a href="">{{ services.servicesWeb }}</a></li>
-        <li><a href="">{{ services.servicesDesign }}</a></li>
-        <li><a href="">{{ services.servicesUiUx }}</a></li>
-        <li><a href="">{{ services.servicesDigital }}</a></li>
-      </ul>
-    </div>
-    <div class="hire">
-      <h3>{{ hireDeveloper.hireHead }}</h3>
-      <ul>
-        <li><a href="">{{ hireDeveloper.hireHead }}</a></li>
-        <li><a href="">{{ hireDeveloper.hirePython }}</a></li>
-        <li><a href="">{{ hireDeveloper.hireAngular }}</a></li>
-        <li><a href="">{{ hireDeveloper.hireROR }}</a></li>
-        <li><a href="">{{ hireDeveloper.hireFlutter }}</a></li>
-        <li><a href="">{{ hireDeveloper.hireReact}}</a></li>
-        <li><a href="">{{ hireDeveloper.HireReactNative}}</a></li>
+        </div>
 
-      </ul>
+        <div class="place">
+          <h6>{{ contactForm.contactCountry2 }}</h6>
+          <p class="add-city">{{ contactForm.contactPlace2 }}</p>
+          <a href="tel: +1 (404) 483-3388" class="contact mobile-no"
+            ><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;{{
+              contactForm.contactMobile2
+            }}</a
+          >
+        </div>
+
+        <div class="place">
+          <h6>{{ contactForm.contactCountry3 }}</h6>
+          <p class="add-city">
+            {{ contactForm.contactPlace3 }}
+          </p>
+          <a href="tel:+44 78240 75400" class="contact mobile-no"
+            ><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;{{
+              contactForm.contactMobile3
+            }}</a
+          >
+        </div>
+
+        <div class="place">
+          <a href="mailto:solutions@taglineinfotech.com" class="mail"
+            ><i class="bi bi-envelope-fill"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+      <h1>{{ contFormData.contFormDataHead }}</h1>
+      <input type="text" placeholder="Full Name" /><br />
+      <input type="text" placeholder="Phone" /><br />
+      <input type="email" placeholder="Email" /><br />
+      <textarea placeholder="Message" rows="3"></textarea><br />
+      <button>{{ contFormData.contFormDatabtn }}</button>
     </div>
   </div>
 
-  <div class="lastfooterdiv">
-    <img src="../assets/images/tagline-stamp.png" />
-    <div>
-      <a href="" style="text-decoration: none; color: gray; font-size: 17px"
-        >Follow Us <i class="bi bi-facebook"></i>
-        <i class="bi bi-linkedin"></i>
-        <i class="bi bi-twitter"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-globe"></i>
-      </a>
+  <!-- ____________________________________________________________________ -->
+
+  <div class="footer">
+    <div class="firstfooter">
+      <div class="cont1">
+        <h3>{{ footer.footerTop }}</h3>
+        <p>
+          {{ footer.footerShare }}
+
+          <span style="color: #d66f37">{{ footer.footerSpan }}</span>
+        </p>
+      </div>
+      <div class="cont2">
+        <input
+          type="email"
+          [(ngModel)]="footerEmailSend"
+          placeholder="Email"
+        /><span
+          ><button>{{ footerSubscribeBtn }}</button></span
+        >
+        <p>{{ footerEmailSend }}</p>
+      </div>
     </div>
-    <p>
-      <span style="color: #d66f37">{{copyrightReserved }}</span> 
-      <a href="" style="text-decoration: none; color: #d66f37"
-        >{{ companyName }}</a
-      >
-    </p>
+    <div class="division">
+      <div>
+        <div class="hr">
+          <h3>{{ hrInquiry.hrHead }}</h3>
+          <ul>
+            <li>
+              <a href=""
+                ><i class="bi bi-telephone-fill"></i>&nbsp;
+                {{ hrInquiry.hrEmail }}</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="bi bi-envelope-fill"></i>&nbsp;
+                {{ hrInquiry.hrMobile }}</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="sales">
+          <h3>{{ salesInquiry.salesHead }}</h3>
+          <ul>
+            <li>
+              <a href=""> {{ salesInquiry.salesEmail }}</a>
+            </li>
+            <li>
+              <a href=""> {{ salesInquiry.salesCompany }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="help">
+        <h3>{{ help.helpHead }}</h3>
+        <ul>
+          <li>
+            <a href=""
+              ><i class="bi bi-telephone-fill"></i>&nbsp;{{
+                help.helpCareer
+              }}</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="bi bi-file-person-fill"></i>&nbsp;{{
+                help.helpAbout
+              }}</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="bi bi-envelope-fill"></i>&nbsp;{{
+                help.helpContact
+              }}</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="bi bi-camera-video"></i>&nbsp;{{ help.helpBlog }}</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="bi bi-file-earmark-lock2-fill"></i>&nbsp;{{
+                help.helpPrivacy
+              }}
+            </a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="bi bi-diagram-3-fill"></i>&nbsp;{{
+                help.helpSitemap
+              }}</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="service">
+        <h3>{{ services.servicesHead }}</h3>
+        <ul>
+          <li>
+            <a href="">{{ services.servicesMobile }}</a>
+          </li>
+          <li>
+            <a href="">{{ services.servicesWeb }}</a>
+          </li>
+          <li>
+            <a href="">{{ services.servicesDesign }}</a>
+          </li>
+          <li>
+            <a href="">{{ services.servicesUiUx }}</a>
+          </li>
+          <li>
+            <a href="">{{ services.servicesDigital }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="hire">
+        <h3>{{ hireDeveloper.hireHead }}</h3>
+        <ul>
+          <li>
+            <a href="">{{ hireDeveloper.hireHead }}</a>
+          </li>
+          <li>
+            <a href="">{{ hireDeveloper.hirePython }}</a>
+          </li>
+          <li>
+            <a href="">{{ hireDeveloper.hireAngular }}</a>
+          </li>
+          <li>
+            <a href="">{{ hireDeveloper.hireROR }}</a>
+          </li>
+          <li>
+            <a href="">{{ hireDeveloper.hireFlutter }}</a>
+          </li>
+          <li>
+            <a href="">{{ hireDeveloper.hireReact }}</a>
+          </li>
+          <li>
+            <a href="">{{ hireDeveloper.HireReactNative }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lastfooterdiv">
+      <img src="../assets/images/tagline-stamp.png" />
+      <div>
+        <a href="" style="text-decoration: none; color: gray; font-size: 17px"
+          >Follow Us <i class="bi bi-facebook"></i>
+          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-globe"></i>
+        </a>
+      </div>
+      <p>
+        <span style="color: #d66f37">{{ copyrightReserved }}</span>
+        <a href="" style="text-decoration: none; color: #d66f37">{{
+          companyName
+        }}</a>
+      </p>
+    </div>
   </div>
+
+  <router-outlet></router-outlet>
 </div>
-
-<router-outlet></router-outlet>

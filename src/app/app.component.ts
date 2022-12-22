@@ -23,55 +23,55 @@ interface HeaderContent {
   headerDownImages: string;
 }
 
-interface ServiceBoxes {
-  seviceHeader: string;
-  seviceBoxHead: string;
-  seviceBoxHeadBold: string;
-  serviceBox2: ServiceBox2;
-  serviceBox3: ServiceBox3;
-  serviceBox4: ServiceBox4;
-  serviceBox5: ServiceBox5;
-  serviceBox6: ServiceBox6;
-  serviceBox7: ServiceBox7;
-}
+// interface ServiceBoxes {
+//   seviceHeader: string;
+//   seviceBoxHead: string;
+//   seviceBoxHeadBold: string;
+//   serviceBox2: ServiceBox2;
+//   serviceBox3: ServiceBox3;
+//   serviceBox4: ServiceBox4;
+//   serviceBox5: ServiceBox5;
+//   serviceBox6: ServiceBox6;
+//   serviceBox7: ServiceBox7;
+// }
 
-interface ServiceBox2 {
-  serviceBox2HeadImg: string;
-  serviceBox2Head: string;
-  serviceBox2Content: string;
-  serviceBox2Anchor: string;
-}
-interface ServiceBox3 {
-  serviceBox3HeadImg: string;
-  serviceBox3Head: string;
-  serviceBox3Content: string;
-  serviceBox3Anchor: string;
-}
-interface ServiceBox4 {
-  serviceBox4HeadImg: string;
-  serviceBox4Head: string;
-  serviceBox4Content: string;
-  serviceBox4Anchor: string;
-}
-interface ServiceBox5 {
-  serviceBox5HeadImg: string;
-  serviceBox5Head: string;
-  serviceBox5Content: string;
-  serviceBox5Anchor: string;
-}
+// interface ServiceBox2 {
+//   serviceBox2HeadImg: string;
+//   serviceBox2Head: string;
+//   serviceBox2Content: string;
+//   serviceBox2Anchor: string;
+// }
+// interface ServiceBox3 {
+//   serviceBox3HeadImg: string;
+//   serviceBox3Head: string;
+//   serviceBox3Content: string;
+//   serviceBox3Anchor: string;
+// }
+// interface ServiceBox4 {
+//   serviceBox4HeadImg: string;
+//   serviceBox4Head: string;
+//   serviceBox4Content: string;
+//   serviceBox4Anchor: string;
+// }
+// interface ServiceBox5 {
+//   serviceBox5HeadImg: string;
+//   serviceBox5Head: string;
+//   serviceBox5Content: string;
+//   serviceBox5Anchor: string;
+// }
 
-interface ServiceBox6 {
-  serviceBox6HeadImg: string;
-  serviceBox6Head: string;
-  serviceBox6Content: string;
-  serviceBox6Anchor: string;
-}
+// interface ServiceBox6 {
+//   serviceBox6HeadImg: string;
+//   serviceBox6Head: string;
+//   serviceBox6Content: string;
+//   serviceBox6Anchor: string;
+// }
 
-interface ServiceBox7 {
-  serviceBox7Head: string;
-  serviceBox7Span: string;
-  serviceBox7Btn: string;
-}
+// interface ServiceBox7 {
+//   serviceBox7Head: string;
+//   serviceBox7Span: string;
+//   serviceBox7Btn: string;
+// }
 
 interface Experience {
   exprContent: ExprContent;
@@ -267,32 +267,32 @@ interface HireDeveloper {
   HireReactNative: string;
 }
 
-interface Blog1 {
-  blogImg: string;
-  blogLanguage: string;
-  blogDate: string;
-  blogTitle: string;
-  blogContent: string;
-  blogLink: string;
-}
+// interface Blog1 {
+//   blogImg: string;
+//   blogLanguage: string;
+//   blogDate: string;
+//   blogTitle: string;
+//   blogContent: string;
+//   blogLink: string;
+// }
 
-interface Blog2 {
-  blogImg: string;
-  blogLanguage: string;
-  blogDate: string;
-  blogTitle: string;
-  blogContent: string;
-  blogLink: string;
-}
+// interface Blog2 {
+//   blogImg: string;
+//   blogLanguage: string;
+//   blogDate: string;
+//   blogTitle: string;
+//   blogContent: string;
+//   blogLink: string;
+// }
 
-interface Blog3 {
-  blogImg: string;
-  blogLanguage: string;
-  blogDate: string;
-  blogTitle: string;
-  blogContent: string;
-  blogLink: string;
-}
+// interface Blog3 {
+//   blogImg: string;
+//   blogLanguage: string;
+//   blogDate: string;
+//   blogTitle: string;
+//   blogContent: string;
+//   blogLink: string;
+// }
 
 interface ContactForm {
   contactHead: string;
@@ -306,6 +306,11 @@ interface ContactForm {
   contactPlace3: string;
   contactMobile3: string;
   contactEmail: string;
+}
+
+interface ContFormData {
+  contFormDataHead: string;
+  contFormDatabtn: string;
 }
 
 @Component({
@@ -341,56 +346,56 @@ export class AppComponent {
     headerDownImages: '../assets/images/images.png',
   };
 
-  serviceBoxes: ServiceBoxes = {
-    seviceHeader: 'Our Services',
-    seviceBoxHead: 'Find the',
-    seviceBoxHeadBold: 'right offers',
+  // serviceBoxes: ServiceBoxes = {
+  //   seviceHeader: 'Our Services',
+  //   seviceBoxHead: 'Find the',
+  //   seviceBoxHeadBold: 'right offers',
 
-    serviceBox2: {
-      serviceBox2HeadImg: '../assets/images/mobile.png',
-      serviceBox2Head: 'Application Management and Modernisation',
-      serviceBox2Content:
-        'Here at Tagline, we provide the service of Application management and modernisation for the growth of your business. We update the old application with new approaches, including the latest languages, frameworks, and platforms.',
-      serviceBox2Anchor: 'Learn More ->',
-    },
+  //   serviceBox2: {
+  //     serviceBox2HeadImg: '../assets/images/mobile.png',
+  //     serviceBox2Head: 'Application Management and Modernisation',
+  //     serviceBox2Content:
+  //       'Here at Tagline, we provide the service of Application management and modernisation for the growth of your business. We update the old application with new approaches, including the latest languages, frameworks, and platforms.',
+  //     serviceBox2Anchor: 'Learn More ->',
+  //   },
 
-    serviceBox3: {
-      serviceBox3HeadImg: '../assets/images/web-design-icon.webp',
-      serviceBox3Head: 'Software Product Engineering',
-      serviceBox3Content:
-        'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
-      serviceBox3Anchor: 'Learn More ->',
-    },
+  //   serviceBox3: {
+  //     serviceBox3HeadImg: '../assets/images/web-design-icon.webp',
+  //     serviceBox3Head: 'Software Product Engineering',
+  //     serviceBox3Content:
+  //       'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
+  //     serviceBox3Anchor: 'Learn More ->',
+  //   },
 
-    serviceBox4: {
-      serviceBox4HeadImg: '../assets/images/testing-icon.webp',
-      serviceBox4Head: 'Agile QA, Automation, and DevOps',
-      serviceBox4Content:
-        'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA, Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QA ensures the quality of the software.',
-      serviceBox4Anchor: 'Learn More ->',
-    },
+  //   serviceBox4: {
+  //     serviceBox4HeadImg: '../assets/images/testing-icon.webp',
+  //     serviceBox4Head: 'Agile QA, Automation, and DevOps',
+  //     serviceBox4Content:
+  //       'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA, Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QA ensures the quality of the software.',
+  //     serviceBox4Anchor: 'Learn More ->',
+  //   },
 
-    serviceBox5: {
-      serviceBox5HeadImg: '../assets/images/uiux-design-icon.webp',
-      serviceBox5Head: 'Digital Strategy & Design',
-      serviceBox5Content:
-        'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
-      serviceBox5Anchor: 'Learn More ->',
-    },
+  //   serviceBox5: {
+  //     serviceBox5HeadImg: '../assets/images/uiux-design-icon.webp',
+  //     serviceBox5Head: 'Digital Strategy & Design',
+  //     serviceBox5Content:
+  //       'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
+  //     serviceBox5Anchor: 'Learn More ->',
+  //   },
 
-    serviceBox6: {
-      serviceBox6HeadImg: '../assets/images/software-development-1.png',
-      serviceBox6Head: 'Software outsourcing company',
-      serviceBox6Content:
-        'Tagline Infotech is an experienced software outsourcing company that provides services for various businesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
-      serviceBox6Anchor: 'Learn More ->',
-    },
-    serviceBox7: {
-      serviceBox7Head: "Don't know what to choose?",
-      serviceBox7Span: 'Drop us a line.',
-      serviceBox7Btn: 'Contact Us',
-    },
-  };
+  //   serviceBox6: {
+  //     serviceBox6HeadImg: '../assets/images/software-development-1.png',
+  //     serviceBox6Head: 'Software outsourcing company',
+  //     serviceBox6Content:
+  //       'Tagline Infotech is an experienced software outsourcing company that provides services for various businesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
+  //     serviceBox6Anchor: 'Learn More ->',
+  //   },
+  //   serviceBox7: {
+  //     serviceBox7Head: "Don't know what to choose?",
+  //     serviceBox7Span: 'Drop us a line.',
+  //     serviceBox7Btn: 'Contact Us',
+  //   },
+  // };
 
   experience: Experience = {
     exprContent: {
@@ -581,35 +586,35 @@ export class AppComponent {
     HireReactNative: 'Hire React Native Developer',
   };
 
-  blog1: Blog1 = {
-    blogImg: '../assets/images/Python-vs-Java.png',
-    blogLanguage: 'Python',
-    blogDate: '15/06/2021',
-    blogTitle: 'Python vs Java Comparison Of',
-    blogContent:
-      'Quick Summary The most difficult decision for an entrepreneur is deciding on a programming...',
-    blogLink: 'Read More ->',
-  };
+  // blog1: Blog1 = {
+  //   blogImg: '../assets/images/Python-vs-Java.png',
+  //   blogLanguage: 'Python',
+  //   blogDate: '15/06/2021',
+  //   blogTitle: 'Python vs Java Comparison Of',
+  //   blogContent:
+  //     'Quick Summary The most difficult decision for an entrepreneur is deciding on a programming...',
+  //   blogLink: 'Read More ->',
+  // };
 
-  blog2: Blog2 = {
-    blogImg: '../assets/images/Node.js-Application.png',
-    blogLanguage: 'Node Js',
-    blogDate: '9/12/22',
-    blogTitle: 'Best Practices for Node.js Application Development:...',
-    blogContent:
-      'Quick Summary Want to know about node js architecture and node js architecture best',
-    blogLink: 'Read More ->',
-  };
+  // blog2: Blog2 = {
+  //   blogImg: '../assets/images/Node.js-Application.png',
+  //   blogLanguage: 'Node Js',
+  //   blogDate: '9/12/22',
+  //   blogTitle: 'Best Practices for Node.js Application Development:...',
+  //   blogContent:
+  //     'Quick Summary Want to know about node js architecture and node js architecture best',
+  //   blogLink: 'Read More ->',
+  // };
 
-  blog3: Blog3 = {
-    blogImg: '../assets/images/Kotlin-vs-Java.png',
-    blogLanguage: 'RoR',
-    blogDate: '9/12/22',
-    blogTitle: 'JavaScript vs Ruby On Rails: What...',
-    blogContent:
-      'Quick Summary: Ruby on Rails and JavaScript both languages are both widely popular among',
-    blogLink: 'Read More ->',
-  };
+  // blog3: Blog3 = {
+  //   blogImg: '../assets/images/Kotlin-vs-Java.png',
+  //   blogLanguage: 'RoR',
+  //   blogDate: '9/12/22',
+  //   blogTitle: 'JavaScript vs Ruby On Rails: What...',
+  //   blogContent:
+  //     'Quick Summary: Ruby on Rails and JavaScript both languages are both widely popular among',
+  //   blogLink: 'Read More ->',
+  // };
 
   contactForm: ContactForm = {
     contactHead: 'Our Global Presence',
@@ -626,6 +631,137 @@ export class AppComponent {
     contactEmail: 'solutions@taglineinfotech.com',
   };
 
+  contFormData: ContFormData = {
+    contFormDataHead: 'Get Your Free Quote Today',
+    contFormDatabtn: 'Send Message',
+  };
+
+  ourServices = [
+    {
+      head: 'Find the right offers',
+    },
+    {
+      img: '../assets/images/mobile.png',
+      head: 'Application Management and Modernisation',
+      content:
+        'Here at Tagline, we provide the service of Application management and modernisation for the growth of your business. We update the old application with new approaches, including the latest languages, frameworks, and platforms.',
+      link: 'Learn More ->',
+    },
+
+    {
+      img: '../assets/images/web-design-icon.webp',
+      head: 'Software Product Engineering',
+      content:
+        'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
+      link: 'Learn More ->',
+    },
+
+    {
+      img: '../assets/images/testing-icon.webp',
+      head: 'Agile QA, Automation, and DevOps',
+      content:
+        'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA, Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QA ensures the quality of the software.',
+      link: 'Learn More ->',
+    },
+
+    {
+      img: '../assets/images/uiux-design-icon.webp',
+      head: 'Digital Strategy & Design',
+      content:
+        'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
+      link: 'Learn More ->',
+    },
+
+    {
+      img: '../assets/images/software-development-1.png',
+      head: 'Software outsourcing company',
+      content:
+        'Tagline Infotech is an experienced software outsourcing company that provides services for various businesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
+      link: 'Learn More ->',
+    },
+    {
+      head: "Don't know what to choose?",
+      serviceBox7Span: 'Drop us a line.',
+      button: 'Contact Us',
+    },
+  ];
+
+  whyTaglineBox = [
+    {
+      img: '../assets/images/choose-roadmap.png ',
+      num: '01',
+      head: ' Progressive Roadmap',
+      content:
+        'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive ',
+    },
+    {
+      img: '../assets/images/choose-project.png ',
+      num: '02',
+      head: 'Efficient Project Management ',
+      content:
+        'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently ',
+    },
+    {
+      img: '../assets/images/choose-flexible.svg ',
+      num: '03 ',
+      head: 'Flexible Engagement Model ',
+      content:
+        ' We provide flexible engagement models so that clients can hire developers for their projects. These engagement models are flexible so if you aren’t satisfied with any model you can switch to another.',
+    },
+    {
+      img: '../assets/images/choose-cost.png ',
+      num: ' 04',
+      head: 'Cost-Effective ',
+      content:
+        'Our team of developers provides the best development services at affordable prices. We believe that high-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring ',
+    },
+    {
+      img: '../assets/images/choose-delivery.png',
+      num: '05 ',
+      head: 'Consistent Delivery ',
+      content:
+        'Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements. ',
+    },
+    {
+      img: '../assets/images/choose-delivery.png',
+      head: 'Empower Your Business with Dedicated Developers ',
+      button: 'Talk to our Expert',
+    },
+  ];
+
+  blogs = [
+    {
+      img: '../assets/images/Python-vs-Java.png',
+      language: 'Python',
+      date: '15/06/2021',
+      title: 'Python vs Java Comparison Of',
+      content:
+        'Quick Summary The most difficult decision for an entrepreneur is deciding on a programming...',
+      link: 'Read More ->',
+    },
+
+    {
+      img: '../assets/images/Node.js-Application.png',
+      language: 'Node Js',
+      date: '9/12/22',
+      title: 'Best Practices for Node.js Application Development:...',
+      content:
+        'Quick Summary Want to know about node js architecture and node js architecture best',
+      link: 'Read More ->',
+    },
+
+    {
+      img: '../assets/images/Kotlin-vs-Java.png',
+      language: 'RoR',
+      date: '9/12/22',
+      title: 'JavaScript vs Ruby On Rails: What...',
+      content:
+        'Quick Summary: Ruby on Rails and JavaScript both languages are both widely popular among',
+      link: 'Read More ->',
+    },
+  ];
+
+  servicesHead : string = 'Our Services';
   blogHeading: string = 'Our Blogs';
   footerEmailSend: string = ' ';
   footerSubscribeBtn: string = 'Subscribe';
