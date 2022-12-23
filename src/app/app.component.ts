@@ -761,7 +761,100 @@ export class AppComponent {
     },
   ];
 
-  servicesHead : string = 'Our Services';
+  experianseNumBoxs = [
+    {
+      img: '../assets/images/contentlogo.webp',
+      projectnum: '125+',
+      type: 'Professional',
+    },
+    {
+      img: '../assets/images/contentlogo2.webp',
+      projectnum: '450+',
+      type: 'Completed Projects',
+    },
+    {
+      img: '../assets/images/contentlogo3.webp',
+      projectnum: '150+',
+      type: 'Freelance Hours',
+    },
+    {
+      img: '../assets/images/contentlogo4.webp',
+      projectnum: '5+',
+      type: 'Years of experience',
+    },
+  ];
+
+  technologyMenus = [
+    'Web',
+    'Mobile',
+    'Desltop',
+    'Plateform',
+    'Database / Data Storage',
+    'Big Data',
+    'Machine Learning',
+    'DevOps',
+    'Clouds',
+  ];
+
+  backEnds = [
+    {
+      img: '../assets/images/ror.png',
+      language: 'Ruby on Rails',
+    },
+    {
+      img: '../assets/images/python.png',
+      language: 'Python',
+    },
+    {
+      img: '../assets/images/node_js.svg',
+      language: 'Node Js',
+    },
+    {
+      img: '../assets/images/php.png',
+      language: 'PHP',
+    },
+    {
+      img: '../assets/images/android-java.png',
+      language: 'Java',
+    },
+    {
+      img: '../assets/images/go.png',
+      language: 'Go Language',
+    },
+  ];
+
+  frontEnds = [
+    {
+      img: '../assets/images/react-js.png',
+      language: 'React',
+    },
+    {
+      img: '../assets/images/angular-icon.png',
+      language: 'Angular',
+    },
+    {
+      img: '../assets/images/typescript-icon.png',
+      language: 'Typescipt',
+    },
+    {
+      img: '../assets/images/vue-js.png',
+      language: 'Vue Js',
+    },
+    {
+      img: '../assets/images/meter-js.png',
+      language: 'Mateor',
+    },
+    {
+      img: '../assets/images/javascript-icon.png',
+      language: 'Javascript',
+    },
+    {
+      img: '../assets/images/html5.png',
+      language: 'Html',
+    },
+  ];
+
+  servicesHead: string = 'Our Services';
   blogHeading: string = 'Our Blogs';
   footerEmailSend: string = ' ';
   footerSubscribeBtn: string = 'Subscribe';

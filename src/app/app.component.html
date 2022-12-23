@@ -166,7 +166,13 @@
 
     <div class="numberexp">
       <div class="fulldiv1">
-        <div class="div1">
+        <div class="div1" *ngFor="let exprBox of experianseNumBoxs">
+          <img [src]="exprBox.img" />
+          <h1>{{ exprBox.projectnum }}</h1>
+          <h5>{{ exprBox.type }}</h5>
+        </div>
+        </div>
+        <!-- <div class="div1">
           <img [src]="experience.exprProduct.exprProduct1Img" />
           <h1>{{ experience.exprProduct.exprProduct1Head }}</h1>
           <h5>{{ experience.exprProduct.exprProduct1Type }}</h5>
@@ -189,7 +195,7 @@
           <h1>{{ experience.exprProduct.exprProduct4Head }}</h1>
           <h5>{{ experience.exprProduct.exprProduct4Type }}</h5>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -204,12 +210,13 @@
   <div class="row">
     <div class="menu">
       <ul>
-        <li class="active">
+        <li class="active" *ngFor="let menu of technologyMenus">
+          <a href="">{{ menu }}</a>
+        </li>
+        <!-- <li class="active">
           <a href="">{{ technology.technologyMenuOption.techMenuWeb }}</a>
         </li>
-        <li>
-          <a href="">{{ technology.technologyMenuOption.techMenuWeb }}</a>
-        </li>
+        
         <li>
           <a href="">{{ technology.technologyMenuOption.techMenuMobile }}</a>
         </li>
@@ -235,7 +242,7 @@
         </li>
         <li>
           <a href="">{{ technology.technologyMenuOption.techMenuClouds }}</a>
-        </li>
+        </li> -->
       </ul>
     </div>
     <div class="language">
@@ -245,7 +252,11 @@
           {{ technology.technologyLanguage.techBackHead }}
         </h2>
         <div class="backend">
-          <div class="ror">
+          <div class="ror" *ngFor="let backEnd of backEnds">
+            <img [src]="backEnd.img" />
+            <h3>{{backEnd.language }}</h3>
+          </div>
+          <!-- <div class="ror">
             <img [src]="technology.technologyLanguage.techRoRImg" />
             <h3>{{ technology.technologyLanguage.techRoRHead }}</h3>
           </div>
@@ -268,12 +279,16 @@
           <div class="go">
             <img [src]="technology.technologyLanguage.techGoImg" />
             <h3>{{ technology.technologyLanguage.techGoHead }}</h3>
-          </div>
+          </div> -->
         </div>
 
         <h2>{{ technology.technologyLanguage.techFrontHead }}</h2>
         <div class="frontend">
-          <div class="react">
+          <div class="react" *ngFor="let frontEnd of frontEnds">
+            <img [src]="frontEnd.img" />
+            <h3>{{ frontEnd.language }}</h3>
+          </div>
+          <!-- <div class="react">
             <img [src]="technology.technologyLanguage.techReactImg" />
             <h3>{{ technology.technologyLanguage.techReactHead }}</h3>
           </div>
@@ -300,7 +315,7 @@
           <div class="html">
             <img [src]="technology.technologyLanguage.techHtmlImg" />
             <h3>{{ technology.technologyLanguage.techHtmlHead }}</h3>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
