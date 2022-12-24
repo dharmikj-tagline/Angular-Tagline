@@ -177,14 +177,7 @@ interface ReviewBox {
   reviewVeried: string;
 }
 
-interface Awards {
-  awardHead: string;
-  award1: string;
-  award2: string;
-  award3: string;
-  award4: string;
-  award5: string;
-}
+
 
 interface Footer {
   footerTop: string;
@@ -474,7 +467,7 @@ export class AppComponent {
     reviewVeried: 'Verified Review',
   };
 
-  awards: Awards = {
+  awards = {
     awardHead: 'Awards & Recognitions',
     award1: '../assets/images/award-2.webp',
     award2: '../assets/images/award-3.webp',
