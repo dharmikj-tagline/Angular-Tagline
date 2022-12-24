@@ -13,9 +13,7 @@
   <span>
     <img [src]="experience.exprContent.exprUpperImg" height="490" />
   </span>
-  <app-experience-projects
-    [experienceProjects]="experianseNumBoxs"
-  ></app-experience-projects>
+  <app-experience-projects [experienceProjects]="experianseNumBoxs"></app-experience-projects>
 </div>
 
 <!-- ____________________________________________________________________ -->
@@ -44,13 +42,9 @@
         </div>
         
       </div> -->
-      <app-technology-backend
-        [backendLanuages]="backEnds"
-      ></app-technology-backend>
+      <app-technology-backend [backendLanuages]="backEnds"></app-technology-backend>
 
-      <app-technology-frontend
-        [frontendLanuages]="frontEnds"
-      ></app-technology-frontend>
+      <app-technology-frontend [frontendLanuages]="frontEnds"></app-technology-frontend>
       <!-- <div class="frontend">
         <div class="react" *ngFor="let frontEnd of frontEnds">
           <img [src]="frontEnd.img" />
@@ -71,8 +65,8 @@
 <div class="reviews">
   <app-client-words></app-client-words>
   <app-review-boxes [reviewBoxesDetail]="reviewBoxes"></app-review-boxes>
-    
-  
+
+
 </div>
 
 <!-- ____________________________________________________________________ -->
@@ -93,161 +87,15 @@
 <!-- ____________________________________________________________________ -->
 
 <div class="footer">
-  <div class="firstfooter">
-    <div class="cont1">
-      <h3>{{ footer.footerTop }}</h3>
-      <p>
-        {{ footer.footerShare }}
-
-        <span style="color: #d66f37">{{ footer.footerSpan }}</span>
-      </p>
-    </div>
-    <div class="cont2">
-      <input
-        type="email"
-        [(ngModel)]="footerEmailSend"
-        placeholder="Email"
-      /><span
-        ><button>{{ footerSubscribeBtn }}</button></span
-      >
-      <p>{{ footerEmailSend }}</p>
-    </div>
-  </div>
+  <app-footer-top></app-footer-top>
   <div class="division">
     <div>
-      <div class="hr">
-        <h3>{{ hrInquiry.hrHead }}</h3>
-        <ul>
-          <li>
-            <a href=""
-              ><i class="bi bi-telephone-fill"></i>&nbsp;
-              {{ hrInquiry.hrEmail }}</a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><i class="bi bi-envelope-fill"></i>&nbsp;
-              {{ hrInquiry.hrMobile }}</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="sales">
-        <h3>{{ salesInquiry.salesHead }}</h3>
-        <ul>
-          <li>
-            <a href=""> {{ salesInquiry.salesEmail }}</a>
-          </li>
-          <li>
-            <a href=""> {{ salesInquiry.salesCompany }}</a>
-          </li>
-        </ul>
-      </div>
+      <app-footer-hr-sales></app-footer-hr-sales>
     </div>
-    <div class="help">
-      <h3>{{ help.helpHead }}</h3>
-      <ul>
-        <li>
-          <a href=""
-            ><i class="bi bi-telephone-fill"></i>&nbsp;{{ help.helpCareer }}</a
-          >
-        </li>
-        <li>
-          <a href=""
-            ><i class="bi bi-file-person-fill"></i>&nbsp;{{ help.helpAbout }}</a
-          >
-        </li>
-        <li>
-          <a href=""
-            ><i class="bi bi-envelope-fill"></i>&nbsp;{{ help.helpContact }}</a
-          >
-        </li>
-        <li>
-          <a href=""
-            ><i class="bi bi-camera-video"></i>&nbsp;{{ help.helpBlog }}</a
-          >
-        </li>
-        <li>
-          <a href=""
-            ><i class="bi bi-file-earmark-lock2-fill"></i>&nbsp;{{
-              help.helpPrivacy
-            }}
-          </a>
-        </li>
-        <li>
-          <a href=""
-            ><i class="bi bi-diagram-3-fill"></i>&nbsp;{{ help.helpSitemap }}</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="service">
-      <h3>{{ services.servicesHead }}</h3>
-      <ul>
-        <li>
-          <a href="">{{ services.servicesMobile }}</a>
-        </li>
-        <li>
-          <a href="">{{ services.servicesWeb }}</a>
-        </li>
-        <li>
-          <a href="">{{ services.servicesDesign }}</a>
-        </li>
-        <li>
-          <a href="">{{ services.servicesUiUx }}</a>
-        </li>
-        <li>
-          <a href="">{{ services.servicesDigital }}</a>
-        </li>
-      </ul>
-    </div>
-    <div class="hire">
-      <h3>{{ hireDeveloper.hireHead }}</h3>
-      <ul>
-        <li>
-          <a href="">{{ hireDeveloper.hireHead }}</a>
-        </li>
-        <li>
-          <a href="">{{ hireDeveloper.hirePython }}</a>
-        </li>
-        <li>
-          <a href="">{{ hireDeveloper.hireAngular }}</a>
-        </li>
-        <li>
-          <a href="">{{ hireDeveloper.hireROR }}</a>
-        </li>
-        <li>
-          <a href="">{{ hireDeveloper.hireFlutter }}</a>
-        </li>
-        <li>
-          <a href="">{{ hireDeveloper.hireReact }}</a>
-        </li>
-        <li>
-          <a href="">{{ hireDeveloper.HireReactNative }}</a>
-        </li>
-      </ul>
-    </div>
+    <app-footer-help></app-footer-help>
+    <app-footer-sevices></app-footer-sevices>
+    <app-footer-hiredeveloper></app-footer-hiredeveloper>
   </div>
 
-  <div class="lastfooterdiv">
-    <img src="../assets/images/tagline-stamp.png" />
-    <div>
-      <a href="" style="text-decoration: none; color: gray; font-size: 17px"
-        >Follow Us <i class="bi bi-facebook"></i>
-        <i class="bi bi-linkedin"></i>
-        <i class="bi bi-twitter"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-globe"></i>
-      </a>
-    </div>
-    <p>
-      <span style="color: #d66f37">{{ copyrightReserved }}</span>
-      <a href="" style="text-decoration: none; color: #d66f37">{{
-        companyName
-      }}</a>
-    </p>
-  </div>
+  <app-footer-last></app-footer-last>
 </div>
-
-<router-outlet></router-outlet>
-<!-- </div> -->

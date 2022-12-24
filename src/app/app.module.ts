@@ -20,6 +20,12 @@ import { AwardsComponent } from './awards/awards.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { ContactDetailComponent } from './contact-detail/contact-detail.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FooterHrSalesComponent } from './footer-hr-sales/footer-hr-sales.component';
+import { FooterHelpComponent } from './footer-help/footer-help.component';
+import { FooterSevicesComponent } from './footer-sevices/footer-sevices.component';
+import { FooterHiredeveloperComponent } from './footer-hiredeveloper/footer-hiredeveloper.component';
+import { FooterTopComponent } from './footer-top/footer-top.component';
+import { FooterLastComponent } from './footer-last/footer-last.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +46,12 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     BlogsComponent,
     ContactDetailComponent,
     ContactFormComponent,
+    FooterHrSalesComponent,
+    FooterHelpComponent,
+    FooterSevicesComponent,
+    FooterHiredeveloperComponent,
+    FooterTopComponent,
+    FooterLastComponent,
     
   ],
   imports: [

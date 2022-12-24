@@ -182,46 +182,11 @@ interface Footer {
   footerSpan: string;
 }
 
-interface HRInquiry {
-  hrHead: string;
-  hrEmail: string;
-  hrMobile: string;
-}
 
-interface SalesInquiry {
-  salesHead: string;
-  salesEmail: string;
-  salesCompany: string;
-}
 
-interface Help {
-  helpHead: string;
-  helpCareer: string;
-  helpAbout: string;
-  helpContact: string;
-  helpBlog: string;
-  helpPrivacy: string;
-  helpSitemap: string;
-}
 
-interface Services {
-  servicesHead: string;
-  servicesMobile: string;
-  servicesWeb: string;
-  servicesDesign: string;
-  servicesUiUx: string;
-  servicesDigital: string;
-}
 
-interface HireDeveloper {
-  hireHead: string;
-  hirePython: string;
-  hireAngular: string;
-  hireROR: string;
-  hireFlutter: string;
-  hireReact: string;
-  HireReactNative: string;
-}
+
 
 // interface ContactForm {
 //   contactHead: string;
@@ -447,46 +412,15 @@ export class AppComponent {
     footerSpan: 'guides and industry news.',
   };
 
-  hrInquiry: HRInquiry = {
-    hrHead: 'HR Inquiry',
-    hrEmail: 'hr@taglineinfotech.com',
-    hrMobile: '+91 6354362521',
-  };
+  
 
-  salesInquiry: SalesInquiry = {
-    salesHead: 'Sales Inquiry',
-    salesEmail: 'solutions@taglineinfotech.com',
-    salesCompany: 'Tagline infotech',
-  };
+ 
 
-  help: Help = {
-    helpHead: 'Help & Advice',
-    helpCareer: 'Career',
-    helpAbout: 'About Us',
-    helpContact: 'Contact Us',
-    helpBlog: 'Blog',
-    helpPrivacy: 'Privacy pilicy',
-    helpSitemap: 'Sitemap',
-  };
+  
 
-  services: Services = {
-    servicesHead: 'Services',
-    servicesMobile: 'Mobile',
-    servicesWeb: 'web Development',
-    servicesDesign: 'Web Design',
-    servicesUiUx: 'UI / UX Design',
-    servicesDigital: 'Digital Marketing',
-  };
+ 
 
-  hireDeveloper: HireDeveloper = {
-    hireHead: 'Hire Developers',
-    hirePython: 'Hire Python Developer',
-    hireAngular: 'Hire Angular Developer',
-    hireROR: 'Hire ROR Developer',
-    hireFlutter: 'Hire Flutter Developer',
-    hireReact: 'Hire React Js Developer',
-    HireReactNative: 'Hire React Native Developer',
-  };
+ 
 
   // blog1: Blog1 = {
   //   blogImg: '../assets/images/Python-vs-Java.png',

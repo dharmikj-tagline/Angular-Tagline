@@ -1,0 +1,15 @@
+<div class="firstfooter">
+    <div class="cont1">
+      <h3>{{ footer.footerTop }}</h3>
+      <p>
+        {{ footer.footerShare }}
+
+        <span style="color: #d66f37">{{ footer.footerSpan }}</span>
+      </p>
+    </div>
+    <div class="cont2">
+      <input type="email" [(ngModel)]="footerEmailSend" placeholder="Email" /><span><button>{{ footerSubscribeBtn
+          }}</button></span>
+      <p>{{ footerEmailSend }}</p>
+    </div>
+  </div>
