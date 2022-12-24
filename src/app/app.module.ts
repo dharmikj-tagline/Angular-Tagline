@@ -17,6 +17,9 @@ import { WhyTaglineBoxesComponent } from './why-tagline-boxes/why-tagline-boxes.
 import { ClientWordsComponent } from './client-words/client-words.component';
 import { ReviewBoxesComponent } from './review-boxes/review-boxes.component';
 import { AwardsComponent } from './awards/awards.component';
+import { BlogsComponent } from './blogs/blogs.component';
+import { ContactDetailComponent } from './contact-detail/contact-detail.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { AwardsComponent } from './awards/awards.component';
     ClientWordsComponent,
     ReviewBoxesComponent,
     AwardsComponent,
+    BlogsComponent,
+    ContactDetailComponent,
+    ContactFormComponent,
     
   ],
   imports: [

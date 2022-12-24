@@ -1,0 +1,16 @@
+<div class="formdetail">
+  <div class="address" *ngFor="let detail of contactForm">
+    <h4>{{ detail.contactHead }}</h4>
+
+    <div class="place">
+      <h6>{{ detail.country }}</h6>
+      <p class="add-city">
+        {{ detail.place }}
+      </p>
+      <a href="tel:+91 99138 08285" class="contact mobile-no"
+        ><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;
+        {{ detail.mobile }}</a
+      >
+    </div>
+  </div>
+</div>

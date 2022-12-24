@@ -81,100 +81,13 @@
 
 <!-- ____________________________________________________________________ -->
 
-<div class="blogs">
-  <h1>{{ blogHeading }}</h1>
-  <span class="headerline"></span>
-  <div class="bloggers">
-    <div class="blog" *ngFor="let blog of blogs">
-      <img [src]="blog.img" />
-      <div style="display: flex; justify-content: space-between">
-        <button>{{ blog.language }}</button>
-        <p>{{ blog.date }}</p>
-      </div>
-      <h3>{{ blog.title }}</h3>
-      <p>
-        {{ blog.content }}
-      </p>
-      <a href="#">{{ blog.link }}</a>
-    </div>
-    <!-- <div class="blog">
-        <img [src]="blog2.blogImg" />
-        <div style="display: flex; justify-content: space-between">
-          <button>{{ blog2.blogLanguage }}</button>
-          <p>{{ blog2.blogDate }}</p>
-        </div>
-        <h3>{{ blog2.blogDate }}</h3>
-        <p></p>
-        <a href="#"></a>
-      </div>
-      <div class="blog">
-        <img [src]="blog3.blogImg" />
-        <div style="display: flex; justify-content: space-between">
-          <button>{{ blog3.blogLanguage }}</button>
-          <p>{{ blog3.blogDate }}</p>
-        </div>
-        <h3>{{ blog3.blogDate }}</h3>
-        <p></p>
-        <a href="#"></a>
-      </div> -->
-  </div>
-</div>
 
+<app-blogs [blogsBox]="blogs"></app-blogs>
 <!-- ____________________________________________________________________ -->
 
 <div class="contactus">
-  <div class="formdetail">
-    <div class="address">
-      <h4>{{ contactForm.contactHead }}</h4>
-
-      <div class="place">
-        <h6>{{ contactForm.contactCountry1 }}</h6>
-        <p class="add-city">
-          {{ contactForm.contactPlace1 }}
-        </p>
-        <a href="tel:+91 99138 08285" class="contact mobile-no"
-          ><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;
-          {{ contactForm.contactMobile1 }}</a
-        >
-      </div>
-
-      <div class="place">
-        <h6>{{ contactForm.contactCountry2 }}</h6>
-        <p class="add-city">{{ contactForm.contactPlace2 }}</p>
-        <a href="tel: +1 (404) 483-3388" class="contact mobile-no"
-          ><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;{{
-            contactForm.contactMobile2
-          }}</a
-        >
-      </div>
-
-      <div class="place">
-        <h6>{{ contactForm.contactCountry3 }}</h6>
-        <p class="add-city">
-          {{ contactForm.contactPlace3 }}
-        </p>
-        <a href="tel:+44 78240 75400" class="contact mobile-no"
-          ><i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;{{
-            contactForm.contactMobile3
-          }}</a
-        >
-      </div>
-
-      <div class="place">
-        <a href="mailto:solutions@taglineinfotech.com" class="mail"
-          ><i class="bi bi-envelope-fill"></i
-        ></a>
-      </div>
-    </div>
-  </div>
-  <div class="forms">
-    <h1>{{ contFormData.contFormDataHead }}</h1>
-    <input type="text" placeholder="Full Name" /><br />
-    <input type="text" placeholder="Phone" /><br />
-    <input type="email" placeholder="Email" /><br />
-    <textarea placeholder="Message" rows="3"></textarea><br />
-    <button>{{ contFormData.contFormDatabtn }}</button>
-  </div>
+  <app-contact-detail [contactForm]="contactFormDetail"></app-contact-detail>
+  <app-contact-form></app-contact-form>
 </div>
 
 <!-- ____________________________________________________________________ -->

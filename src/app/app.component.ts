@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 
-
 // interface ServiceBox2 {
 //   serviceBox2HeadImg: string;
 //   serviceBox2Head: string;
@@ -177,8 +176,6 @@ interface ReviewBox {
   reviewVeried: string;
 }
 
-
-
 interface Footer {
   footerTop: string;
   footerShare: string;
@@ -226,51 +223,24 @@ interface HireDeveloper {
   HireReactNative: string;
 }
 
-// interface Blog1 {
-//   blogImg: string;
-//   blogLanguage: string;
-//   blogDate: string;
-//   blogTitle: string;
-//   blogContent: string;
-//   blogLink: string;
+// interface ContactForm {
+//   contactHead: string;
+//   contactCountry1: string;
+//   contactPlace1: string;
+//   contactMobile1: string;
+//   contactCountry2: string;
+//   contactPlace2: string;
+//   contactMobile2: string;
+//   contactCountry3: string;
+//   contactPlace3: string;
+//   contactMobile3: string;
+//   contactEmail: string;
 // }
 
-// interface Blog2 {
-//   blogImg: string;
-//   blogLanguage: string;
-//   blogDate: string;
-//   blogTitle: string;
-//   blogContent: string;
-//   blogLink: string;
+// interface ContFormData {
+//   contFormDataHead: string;
+//   contFormDatabtn: string;
 // }
-
-// interface Blog3 {
-//   blogImg: string;
-//   blogLanguage: string;
-//   blogDate: string;
-//   blogTitle: string;
-//   blogContent: string;
-//   blogLink: string;
-// }
-
-interface ContactForm {
-  contactHead: string;
-  contactCountry1: string;
-  contactPlace1: string;
-  contactMobile1: string;
-  contactCountry2: string;
-  contactPlace2: string;
-  contactMobile2: string;
-  contactCountry3: string;
-  contactPlace3: string;
-  contactMobile3: string;
-  contactEmail: string;
-}
-
-interface ContFormData {
-  contFormDataHead: string;
-  contFormDatabtn: string;
-}
 
 @Component({
   selector: 'app-root',
@@ -280,7 +250,13 @@ interface ContFormData {
 export class AppComponent {
   title = 'tagline_angular';
 
-  labelHeader : string[] = ['Case Study','About Us','Hire Developer','Technology','Industry'];
+  labelHeader: string[] = [
+    'Case Study',
+    'About Us',
+    'Hire Developer',
+    'Technology',
+    'Industry',
+  ];
 
   ourServices = [
     {
@@ -331,8 +307,6 @@ export class AppComponent {
       button: 'Contact Us',
     },
   ];
-
-  
 
   experience: Experience = {
     exprContent: {
@@ -467,15 +441,6 @@ export class AppComponent {
     reviewVeried: 'Verified Review',
   };
 
-  awards = {
-    awardHead: 'Awards & Recognitions',
-    award1: '../assets/images/award-2.webp',
-    award2: '../assets/images/award-3.webp',
-    award3: '../assets/images/award-4.webp',
-    award4: '../assets/images/award-5.webp',
-    award5: '../assets/images/award-6.webp',
-  };
-
   footer: Footer = {
     footerTop: 'Get latest from Tagline Infotech',
     footerShare: 'Share your email so we can send you',
@@ -553,27 +518,24 @@ export class AppComponent {
   //   blogLink: 'Read More ->',
   // };
 
-  contactForm: ContactForm = {
-    contactHead: 'Our Global Presence',
-    contactCountry1: 'India (HQ)',
-    contactPlace1:
-      'Digital Valley, 423, Apple Square, beside Lajamni Chowk, Mota Varachha, Surat, Gujarat 394101',
-    contactMobile1: '+91 9913 808 285',
-    contactCountry2: 'U.S.A',
-    contactPlace2: '2885 Old Zion, Cemetery Rd, Loganville, Ga 30052',
-    contactMobile2: '+1 (404) 483-3388',
-    contactCountry3: 'United Kingdom',
-    contactPlace3: '65 Byron road North wembley Middlesex, london HA0 3PB',
-    contactMobile3: '+44 78240 75400',
-    contactEmail: 'solutions@taglineinfotech.com',
-  };
+  // contactForm: ContactForm = {
+  //   contactHead: 'Our Global Presence',
+  //   contactCountry1: 'India (HQ)',
+  //   contactPlace1:
+  //     'Digital Valley, 423, Apple Square, beside Lajamni Chowk, Mota Varachha, Surat, Gujarat 394101',
+  //   contactMobile1: '+91 9913 808 285',
+  //   contactCountry2: 'U.S.A',
+  //   contactPlace2: '2885 Old Zion, Cemetery Rd, Loganville, Ga 30052',
+  //   contactMobile2: '+1 (404) 483-3388',
+  //   contactCountry3: 'United Kingdom',
+  //   contactPlace3: '65 Byron road North wembley Middlesex, london HA0 3PB',
+  //   contactMobile3: '+44 78240 75400',
+  //   contactEmail: 'solutions@taglineinfotech.com',
+  // };
 
-  contFormData: ContFormData = {
-    contFormDataHead: 'Get Your Free Quote Today',
-    contFormDatabtn: 'Send Message',
-  };
+  // contFormData: ContFormData = {
 
-  
+  // };
 
   whyTaglineBox = [
     {
@@ -673,18 +635,6 @@ export class AppComponent {
     },
   ];
 
-  technologyMenus = [
-    'Web',
-    'Mobile',
-    'Desltop',
-    'Plateform',
-    'Database / Data Storage',
-    'Big Data',
-    'Machine Learning',
-    'DevOps',
-    'Clouds',
-  ];
-
   backEnds = [
     {
       img: '../assets/images/ror.png',
@@ -743,7 +693,6 @@ export class AppComponent {
     },
   ];
 
-
   reviewBoxes = [
     {
       rate: '5.0',
@@ -753,42 +702,75 @@ export class AppComponent {
     },
     {
       rate: '5.0',
-      reviewWord: '"They understand complex technical requirements, and they have a team that quickly gets up to speed."',
+      reviewWord:
+        '"They understand complex technical requirements, and they have a team that quickly gets up to speed."',
       company: 'Founder, Cimpro.io',
       veried: 'Verified Review',
     },
     {
       rate: '5.0',
-      reviewWord: '"…they’re able to tackle pretty much everything you throw at them."',
+      reviewWord:
+        '"…they’re able to tackle pretty much everything you throw at them."',
       company: 'CEO, Promoprep',
       veried: 'Verified Review',
     },
     {
       rate: '5.0',
-      reviewWord: '“When things go wrong, they were good at adapting and problem solving on the fly.”',
+      reviewWord:
+        '“When things go wrong, they were good at adapting and problem solving on the fly.”',
       company: 'IT & Computer Scientist, Self-Employed',
       veried: 'Verified Review',
     },
     {
       rate: '5.0',
-      reviewWord: '"The team takes up new challenges and finishes the project on time."',
+      reviewWord:
+        '"The team takes up new challenges and finishes the project on time."',
       company: 'IT & Computer Scientist, Self-Employed',
       veried: 'Verified Review',
     },
     {
       rate: '5.0',
-      reviewWord: '"We are getting close to launch now and it\'s been a tremendous help to have their developers on my team."',
+      reviewWord:
+        '"We are getting close to launch now and it\'s been a tremendous help to have their developers on my team."',
       company: 'IT & Computer Scientist, Self-Employed',
       veried: 'Verified Review',
     },
   ];
 
-  techMenu=['Web','Mobile','Desktop','Plateform','Database / Data Storage','Big Data','Machine Learning','DevOps','Clouds'];
+  contactFormDetail = [
+    {
+      // contactHead: 'Our Global Presence',
+      country: 'India (HQ)',
+      place:
+        'Digital Valley, 423, Apple Square, beside Lajamni Chowk, Mota Varachha, Surat, Gujarat 394101',
+      mobile: '+91 9913 808 285',
+    },
+    {
+      country: 'U.S.A',
+      place: '2885 Old Zion, Cemetery Rd, Loganville, Ga 30052',
+      mobile: '+1 (404) 483-3388',
+    },
+    {
+      country: 'United Kingdom',
+      place: '65 Byron road North wembley Middlesex, london HA0 3PB',
+      mobile: '+44 78240 75400',
+    },
+  ];
+
+  techMenu = [
+    'Web',
+    'Mobile',
+    'Desktop',
+    'Plateform',
+    'Database / Data Storage',
+    'Big Data',
+    'Machine Learning',
+    'DevOps',
+    'Clouds',
+  ];
 
   inputDemo = 'Worked Parent';
 
-  
-  blogHeading: string = 'Our Blogs';
   footerEmailSend: string = ' ';
   footerSubscribeBtn: string = 'Subscribe';
   companyName: string = 'Tagline Infotech LLP';
