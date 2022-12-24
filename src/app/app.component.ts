@@ -1,27 +1,27 @@
 import { Component } from '@angular/core';
 
-interface LabelHeader {
-  taglineImg: string;
-  labelCaseStudy: string;
-  labelAboutUs: string;
-  labelHireDeveloper: string;
-  labelTechnology: string;
-  labelIndustry: string;
-  btnHeader: string;
-  btnHeaderStyle: string;
-  btnHeaderType: string;
-}
+// interface LabelHeader {
+//   taglineImg: string;
+//   labelCaseStudy: string;
+//   labelAboutUs: string;
+//   labelHireDeveloper: string;
+//   labelTechnology: string;
+//   labelIndustry: string;
+//   btnHeader: string;
+//   btnHeaderStyle: string;
+//   btnHeaderType: string;
+// }
 
-interface HeaderContent {
-  headerContentFirst: string;
-  headerContentFirstNew: string;
-  headerContentSecond: string;
-  headerContentSecondSpan: string;
-  headerContentParagraph: string;
-  headeSchedualMeetBtnType: string;
-  headeSchedualMeetBtnCount: string;
-  headerDownImages: string;
-}
+// interface HeaderContent {
+//   headerContentFirst: string;
+//   headerContentFirstNew: string;
+//   headerContentSecond: string;
+//   headerContentSecondSpan: string;
+//   headerContentParagraph: string;
+//   headeSchedualMeetBtnType: string;
+//   headeSchedualMeetBtnCount: string;
+//   headerDownImages: string;
+// }
 
 // interface ServiceBoxes {
 //   seviceHeader: string;
@@ -321,30 +321,31 @@ interface ContFormData {
 export class AppComponent {
   title = 'tagline_angular';
 
-  // labelHeader: LabelHeader = ['Case Study','About Us','Hire Developer','Technology','Industry'];
-  labelHeader: LabelHeader = {
-    taglineImg: '../assets/../assets/images/tagline.png',
-    labelCaseStudy: 'Case Study',
-    labelAboutUs: 'About Us',
-    labelHireDeveloper: 'Hire Developer',
-    labelTechnology: 'Technology',
-    labelIndustry: 'Industry',
-    btnHeader: 'GET QUOTE',
-    btnHeaderStyle: 'display: flex; justify-content: end;',
-    btnHeaderType: 'button',
-  };
+  labelHeader : string[] = ['Case Study','About Us','Hire Developer','Technology','Industry'];
+  // labelHeader: LabelHeader = {
+  //   taglineImg: '../assets/../assets/images/tagline.png',
+  //   labelCaseStudy: 'Case Study',
+  //   labelAboutUs: 'About Us',
+  //   labelHireDeveloper: 'Hire Developer',
+  //   labelTechnology: 'Technology',
+  //   labelIndustry: 'Industry',
+  //   btnHeader: 'GET QUOTE',
+  //   btnHeaderStyle: 'display: flex; justify-content: end;',
+  //   btnHeaderType: 'button',
+  // };
+  
 
-  headerContent: HeaderContent = {
-    headerContentFirst: 'Software Development Company',
-    headerContentFirstNew: '& IT Consultancy',
-    headerContentSecond: 'Serving',
-    headerContentSecondSpan: 'Start-UPs To Fortune 500',
-    headerContentParagraph:
-      'With the help of Innovation and Technology, We give you the power to <br> change the world with your ideas.',
-    headeSchedualMeetBtnType: 'button',
-    headeSchedualMeetBtnCount: 'Schedule a meeting',
-    headerDownImages: '../assets/images/images.png',
-  };
+  // headerContent: HeaderContent = {
+  //   headerContentFirst: 'Software Development Company',
+  //   headerContentFirstNew: '& IT Consultancy',
+  //   headerContentSecond: 'Serving',
+  //   headerContentSecondSpan: 'Start-UPs To Fortune 500',
+  //   headerContentParagraph:
+  //     'With the help of Innovation and Technology, We give you the power to <br> change the world with your ideas.',
+  //   headeSchedualMeetBtnType: 'button',
+  //   headeSchedualMeetBtnCount: 'Schedule a meeting',
+  //   headerDownImages: '../assets/images/images.png',
+  // };
 
   // serviceBoxes: ServiceBoxes = {
   //   seviceHeader: 'Our Services',
@@ -853,6 +854,48 @@ export class AppComponent {
       language: 'Html',
     },
   ];
+
+
+  reviewBoxes = [
+    {
+      rate: '5.0',
+      reviewWord: '"Everything always turns out perfectly done."',
+      company: 'IT & Computer Scientist, Self-Employed',
+      veried: 'Verified Review',
+    },
+    {
+      rate: '5.0',
+      reviewWord: '"They understand complex technical requirements, and they have a team that quickly gets up to speed."',
+      company: 'Founder, Cimpro.io',
+      veried: 'Verified Review',
+    },
+    {
+      rate: '5.0',
+      reviewWord: '"…they’re able to tackle pretty much everything you throw at them."',
+      company: 'CEO, Promoprep',
+      veried: 'Verified Review',
+    },
+    {
+      rate: '5.0',
+      reviewWord: '“When things go wrong, they were good at adapting and problem solving on the fly.”',
+      company: 'IT & Computer Scientist, Self-Employed',
+      veried: 'Verified Review',
+    },
+    {
+      rate: '5.0',
+      reviewWord: '"The team takes up new challenges and finishes the project on time."',
+      company: 'IT & Computer Scientist, Self-Employed',
+      veried: 'Verified Review',
+    },
+    {
+      rate: '5.0',
+      reviewWord: '"We are getting close to launch now and it\'s been a tremendous help to have their developers on my team."',
+      company: 'IT & Computer Scientist, Self-Employed',
+      veried: 'Verified Review',
+    },
+  ];
+
+  inputDemo = 'Worked Parent';
 
   servicesHead: string = 'Our Services';
   blogHeading: string = 'Our Blogs';

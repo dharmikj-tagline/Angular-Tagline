@@ -1,54 +1,6 @@
 <div class="topbar">
-  <div class="header">
-    <nav>
-      <ul>
-        <img [src]="labelHeader.taglineImg" />
-        <li>
-          <a href="#">{{ labelHeader.labelCaseStudy }}</a>
-        </li>
-        <li>
-          <label>{{ labelHeader.labelAboutUs }}</label>
-          <select></select>
-        </li>
-        <li>
-          <label>{{ labelHeader.labelHireDeveloper }}</label>
-          <select></select>
-        </li>
-        <li>
-          <label>{{ labelHeader.labelTechnology }}</label>
-          <select></select>
-        </li>
-        <li>
-          <label>{{ labelHeader.labelIndustry }}</label>
-          <select></select>
-        </li>
-        <div class="btnget">
-          <button
-            [type]="labelHeader.btnHeaderType"
-            [style]="labelHeader.btnHeaderStyle"
-          >
-            {{ labelHeader.btnHeader }}
-          </button>
-        </div>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="headtext">
-    <h1>
-      {{ headerContent.headerContentFirst }} <br />
-      {{ headerContent.headerContentFirstNew }}
-    </h1>
-    <h1>
-      {{ headerContent.headerContentSecond }}
-      <span> {{ headerContent.headerContentSecondSpan }} </span>
-    </h1>
-    <p>{{ headerContent.headerContentParagraph }}</p>
-    <button [type]="headerContent.headeSchedualMeetBtnType">
-      {{ headerContent.headeSchedualMeetBtnCount }}
-    </button>
-    <img [src]="headerContent.headerDownImages" />
-  </div>
+  <app-header-navbar [headerNavContent]="labelHeader"></app-header-navbar>
+  <app-header-main-content></app-header-main-content>
 </div>
 
 <!-- ___________________________________________________________ -->
@@ -171,8 +123,8 @@
           <h1>{{ exprBox.projectnum }}</h1>
           <h5>{{ exprBox.type }}</h5>
         </div>
-        </div>
-        <!-- <div class="div1">
+      </div>
+      <!-- <div class="div1">
           <img [src]="experience.exprProduct.exprProduct1Img" />
           <h1>{{ experience.exprProduct.exprProduct1Head }}</h1>
           <h5>{{ experience.exprProduct.exprProduct1Type }}</h5>
@@ -254,7 +206,7 @@
         <div class="backend">
           <div class="ror" *ngFor="let backEnd of backEnds">
             <img [src]="backEnd.img" />
-            <h3>{{backEnd.language }}</h3>
+            <h3>{{ backEnd.language }}</h3>
           </div>
           <!-- <div class="ror">
             <img [src]="technology.technologyLanguage.techRoRImg" />
@@ -824,3 +776,6 @@
 
   <router-outlet></router-outlet>
 </div>
+
+
+

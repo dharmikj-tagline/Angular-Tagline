@@ -1,0 +1,17 @@
+<div class="header">
+  <nav>
+    <ul>
+      <img [src]="taglineImg" />
+
+      <li *ngFor="let label of headerNavContent">
+        <a href="#">{{ label }}</a>
+        <select></select>
+      </li>
+      <div class="btnget">
+        <button [type]="btnHeaderType" [style]="btnHeaderStyle">
+          {{ btnHeader }}
+        </button>
+      </div>
+    </ul>
+  </nav>
+</div>
