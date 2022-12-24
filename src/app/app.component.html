@@ -5,7 +5,6 @@
 
 <app-sevices [serviceBoxes]="ourServices"></app-sevices>
 
-
 <!-- ___________________________________________________________ -->
 
 <div class="experience">
@@ -17,31 +16,6 @@
   <app-experience-projects
     [experienceProjects]="experianseNumBoxs"
   ></app-experience-projects>
-  <!-- <div class="div1">
-          <img [src]="experience.exprProduct.exprProduct1Img" />
-          <h1>{{ experience.exprProduct.exprProduct1Head }}</h1>
-          <h5>{{ experience.exprProduct.exprProduct1Type }}</h5>
-        </div>
-        <div class="div2">
-          <img [src]="experience.exprProduct.exprProduct2Img" />
-          <h1>{{ experience.exprProduct.exprProduct2Head }}</h1>
-          <h5>{{ experience.exprProduct.exprProduct2Type }}</h5>
-        </div>
-      </div>
-
-      <div class="fulldiv2">
-        <div class="div3">
-          <img [src]="experience.exprProduct.exprProduct3Img" />
-          <h1>{{ experience.exprProduct.exprProduct3Head }}</h1>
-          <h5>{{ experience.exprProduct.exprProduct3Type }}</h5>
-        </div>
-        <div class="div4">
-          <img [src]="experience.exprProduct.exprProduct4Img" />
-          <h1>{{ experience.exprProduct.exprProduct4Head }}</h1>
-          <h5>{{ experience.exprProduct.exprProduct4Type }}</h5>
-        </div>
-      </div> -->
-  <!-- </div> -->
 </div>
 
 <!-- ____________________________________________________________________ -->
@@ -51,115 +25,37 @@
 </h1>
 <span class="headerline"></span>
 <div class="row">
-  <div class="menu">
+  <app-technologies [technologyMenus]="techMenu"></app-technologies>
+  <!-- <div class="menu">
     <ul>
       <li class="active" *ngFor="let menu of technologyMenus">
         <a href="">{{ menu }}</a>
       </li>
-      <!-- <li class="active">
-          <a href="">{{ technology.technologyMenuOption.techMenuWeb }}</a>
-        </li>
-        
-        <li>
-          <a href="">{{ technology.technologyMenuOption.techMenuMobile }}</a>
-        </li>
-        <li>
-          <a href="">{{ technology.technologyMenuOption.techMenuDesktop }}</a>
-        </li>
-        <li>
-          <a href="">{{ technology.technologyMenuOption.techMenuPlateform }}</a>
-        </li>
-        <li>
-          <a href="">{{ technology.technologyMenuOption.techMenuDatabase }}</a>
-        </li>
-        <li>
-          <a href="">{{ technology.technologyMenuOption.techMenuBigData }}</a>
-        </li>
-        <li>
-          <a href="">{{
-            technology.technologyMenuOption.techMenuMachineLern
-          }}</a>
-        </li>
-        <li>
-          <a href="">{{ technology.technologyMenuOption.techMenuDevOps }}</a>
-        </li>
-        <li>
-          <a href="">{{ technology.technologyMenuOption.techMenuClouds }}</a>
-        </li> -->
     </ul>
-  </div>
+  </div> -->
   <div class="language">
     <div class="web">
       <h1>Web</h1>
-      <h2 style="margin-top: 20px; font-weight: 400">
-        {{ technology.technologyLanguage.techBackHead }}
-      </h2>
-      <div class="backend">
+      
+      <!-- <div class="backend">
         <div class="ror" *ngFor="let backEnd of backEnds">
           <img [src]="backEnd.img" />
           <h3>{{ backEnd.language }}</h3>
         </div>
-        <!-- <div class="ror">
-            <img [src]="technology.technologyLanguage.techRoRImg" />
-            <h3>{{ technology.technologyLanguage.techRoRHead }}</h3>
-          </div>
-          <div class="python">
-            <img [src]="technology.technologyLanguage.techPythonImg" />
-            <h3>{{ technology.technologyLanguage.techPythonHead }}</h3>
-          </div>
-          <div class="node">
-            <img [src]="technology.technologyLanguage.techNodeImg" />
-            <h3>{{ technology.technologyLanguage.techNodeHead }}</h3>
-          </div>
-          <div class="php">
-            <img [src]="technology.technologyLanguage.techPhpImg" />
-            <h3>{{ technology.technologyLanguage.techPhpHead }}</h3>
-          </div>
-          <div class="java">
-            <img [src]="technology.technologyLanguage.techJavaImg" />
-            <h3>{{ technology.technologyLanguage.techJavaHead }}</h3>
-          </div>
-          <div class="go">
-            <img [src]="technology.technologyLanguage.techGoImg" />
-            <h3>{{ technology.technologyLanguage.techGoHead }}</h3>
-          </div> -->
-      </div>
+        
+      </div> -->
+      <app-technology-backend
+        [backendLanuages]="backEnds"
+      ></app-technology-backend>
 
-      <h2>{{ technology.technologyLanguage.techFrontHead }}</h2>
-      <div class="frontend">
+      
+      <app-technology-frontend [frontendLanuages]="frontEnds"></app-technology-frontend>
+      <!-- <div class="frontend">
         <div class="react" *ngFor="let frontEnd of frontEnds">
           <img [src]="frontEnd.img" />
           <h3>{{ frontEnd.language }}</h3>
         </div>
-        <!-- <div class="react">
-            <img [src]="technology.technologyLanguage.techReactImg" />
-            <h3>{{ technology.technologyLanguage.techReactHead }}</h3>
-          </div>
-          <div class="angular">
-            <img [src]="technology.technologyLanguage.techAngularImg" />
-            <h3>{{ technology.technologyLanguage.techAngularHead }}</h3>
-          </div>
-          <div class="typescipt">
-            <img [src]="technology.technologyLanguage.techTypeScriptImg" />
-            <h3>{{ technology.technologyLanguage.techTypeScriptHead }}</h3>
-          </div>
-          <div class="vue">
-            <img [src]="technology.technologyLanguage.techVueImg" />
-            <h3>{{ technology.technologyLanguage.techVueHead }}</h3>
-          </div>
-          <div class="mateor">
-            <img [src]="technology.technologyLanguage.techMateorImg" />
-            <h3>{{ technology.technologyLanguage.techMateorHead }}</h3>
-          </div>
-          <div class="javascript">
-            <img [src]="technology.technologyLanguage.techJavaScriptImg" />
-            <h3>{{ technology.technologyLanguage.techJavaScriptHead }}</h3>
-          </div>
-          <div class="html">
-            <img [src]="technology.technologyLanguage.techHtmlImg" />
-            <h3>{{ technology.technologyLanguage.techHtmlHead }}</h3>
-          </div> -->
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

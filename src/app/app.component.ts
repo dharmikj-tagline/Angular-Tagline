@@ -790,6 +790,8 @@ export class AppComponent {
     },
   ];
 
+  techMenu=['Web','Mobile','Desktop','Plateform','Database / Data Storage','Big Data','Machine Learning','DevOps','Clouds'];
+
   inputDemo = 'Worked Parent';
 
   

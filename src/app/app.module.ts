@@ -9,6 +9,9 @@ import { HeaderMainContentComponent } from './header-main-content/header-main-co
 import { SevicesComponent } from './sevices/sevices.component';
 import { ExperienceContentComponent } from './experience-content/experience-content.component';
 import { ExperienceProjectsComponent } from './experience-projects/experience-projects.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
+import { TechnologyBackendComponent } from './technology-backend/technology-backend.component';
+import { TechnologyFrontendComponent } from './technology-frontend/technology-frontend.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { ExperienceProjectsComponent } from './experience-projects/experience-pr
     SevicesComponent,
     ExperienceContentComponent,
     ExperienceProjectsComponent,
+    TechnologiesComponent,
+    TechnologyBackendComponent,
+    TechnologyFrontendComponent,
     
   ],
   imports: [

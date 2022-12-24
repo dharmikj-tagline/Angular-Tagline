@@ -1,0 +1,7 @@
+<h2>{{ techFrontHead }}</h2>
+<div class="frontend">
+  <div class="react" *ngFor="let frontEnd of frontendLanuages">
+    <img [src]="frontEnd.img" />
+    <h3>{{ frontEnd.language }}</h3>
+  </div>
+</div>

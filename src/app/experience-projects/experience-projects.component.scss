@@ -1,3 +1,9 @@
+//  .fulldiv1{
+//     display: flex;
+//     flex-direction: row;
+//     width: 450px;
+//  }
+ 
  .numberexp {
     background: linear-gradient(to left, #eb8f5e, #ffffffc8);
     color: #d66f37;
@@ -5,18 +11,14 @@
     min-height: 68vh;
 }
 
- .numberexp .fulldiv1,
-.fulldiv2 {
+ .numberexp .fulldiv1
+ {
     display: flex;
     padding: 60px 50px 0px 150px;
+    flex-direction: row;
     
 }
 
-// .numberexp .fulldiv1 .div1{
-//     min-width: 50%;
-//     min-height: 100%;
-    
-// }
 
  .numberexp .fulldiv1 .div1 h1 {
     font-weight: 600;
