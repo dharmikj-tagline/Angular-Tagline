@@ -36,7 +36,7 @@
   <div class="language">
     <div class="web">
       <h1>Web</h1>
-      
+
       <!-- <div class="backend">
         <div class="ror" *ngFor="let backEnd of backEnds">
           <img [src]="backEnd.img" />
@@ -48,8 +48,9 @@
         [backendLanuages]="backEnds"
       ></app-technology-backend>
 
-      
-      <app-technology-frontend [frontendLanuages]="frontEnds"></app-technology-frontend>
+      <app-technology-frontend
+        [frontendLanuages]="frontEnds"
+      ></app-technology-frontend>
       <!-- <div class="frontend">
         <div class="react" *ngFor="let frontEnd of frontEnds">
           <img [src]="frontEnd.img" />
@@ -62,72 +63,8 @@
 
 <!-- ____________________________________________________________________ -->
 
-<h1 class="taglinewhyhead">{{ whyTagline.whyTaglineHead }}</h1>
-<span class="headerline"></span>
-<p class="taglinewhyp">
-  {{ whyTagline.whyTaglinePara }}
-</p>
-<div class="empowers">
-  <div class="empowerbox" *ngFor="let tagbox of whyTaglineBox">
-    <div class="imgnumflex">
-      <img [src]="tagbox.img" />
-      <h1>{{ tagbox.num }}</h1>
-    </div>
-    <h2>{{ tagbox.head }}</h2>
-    <p>
-      {{ tagbox.content }}
-    </p>
-    <!-- <button>{{ tagbox.content }}</button> -->
-  </div>
-  <!-- <div class="empowerbox">
-      <div class="imgnumflex">
-        <img [src]="whyTagline.whyTagBox2.efficientImg" />
-        <h1>{{ whyTagline.whyTagBox2.efficientNum }}</h1>
-      </div>
-      <h2>{{ whyTagline.whyTagBox2.efficientHead }}</h2>
-      <p>
-        {{ whyTagline.whyTagBox2.efficientPara }}
-      </p>
-    </div>
-    <div class="empowerbox">
-      <div class="imgnumflex">
-        <img [src]="whyTagline.whyTagBox3.flexibleImg" />
-        <h1>{{ whyTagline.whyTagBox3.flexibleNum }}</h1>
-      </div>
-      <h2>{{ whyTagline.whyTagBox3.flexibleHead }}</h2>
-      <p>
-        {{ whyTagline.whyTagBox3.flexiblePara }}
-      </p>
-    </div>
-    <div class="empowerbox">
-      <div class="imgnumflex">
-        <img [src]="whyTagline.whyTagBox4.costEffectiveImg" />
-        <h1>{{ whyTagline.whyTagBox4.costEffectiveNum }}</h1>
-      </div>
-      <h2>{{ whyTagline.whyTagBox4.costEffectiveHead }}</h2>
-      <p>
-        {{ whyTagline.whyTagBox4.costEffectivePara }}
-      </p>
-    </div>
-    <div class="empowerbox">
-      <div class="imgnumflex">
-        <img [src]="whyTagline.whyTagBox5.consistentImg" />
-        <h1>{{ whyTagline.whyTagBox5.consistentNum }}</h1>
-      </div>
-      <h2>{{ whyTagline.whyTagBox5.consistentHead }}</h2>
-      <p>
-        {{ whyTagline.whyTagBox5.consistentPara }}
-      </p>
-    </div>
-    <div class="empowerbox lastempowerbox">
-      <h1>
-        <span>{{ whyTagline.whyTagBox6.empowerSpan1 }} </span> Your
-        <span>{{ whyTagline.whyTagBox6.empowerSpan2 }}</span>
-        {{ whyTagline.whyTagBox6.empowerHead }}
-      </h1>
-      <button>{{ whyTagline.whyTagBox6.empowerBtn }}</button>
-    </div> -->
-</div>
+<app-why-tagline></app-why-tagline>
+<app-why-tagline-boxes [whyTaglineBoxs]="whyTaglineBox"></app-why-tagline-boxes>
 
 <!-- ____________________________________________________________________ -->
 

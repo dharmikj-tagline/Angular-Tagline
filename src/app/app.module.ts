@@ -12,6 +12,8 @@ import { ExperienceProjectsComponent } from './experience-projects/experience-pr
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { TechnologyBackendComponent } from './technology-backend/technology-backend.component';
 import { TechnologyFrontendComponent } from './technology-frontend/technology-frontend.component';
+import { WhyTaglineComponent } from './why-tagline/why-tagline.component';
+import { WhyTaglineBoxesComponent } from './why-tagline-boxes/why-tagline-boxes.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { TechnologyFrontendComponent } from './technology-frontend/technology-fr
     TechnologiesComponent,
     TechnologyBackendComponent,
     TechnologyFrontendComponent,
+    WhyTaglineComponent,
+    WhyTaglineBoxesComponent,
     
   ],
   imports: [
