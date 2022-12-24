@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderNavbarComponent } from './header-navbar/header-navbar.component';
 import { HeaderMainContentComponent } from './header-main-content/header-main-content.component';
 import { SevicesComponent } from './sevices/sevices.component';
+import { ExperienceContentComponent } from './experience-content/experience-content.component';
+import { ExperienceProjectsComponent } from './experience-projects/experience-projects.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { SevicesComponent } from './sevices/sevices.component';
     HeaderNavbarComponent,
     HeaderMainContentComponent,
     SevicesComponent,
+    ExperienceContentComponent,
+    ExperienceProjectsComponent,
     
   ],
   imports: [

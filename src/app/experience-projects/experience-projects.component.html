@@ -1,0 +1,12 @@
+<div class="experience">
+  <div class="numberexp">
+    <div class="fulldiv1">
+      <div class="div1" *ngFor="let exprBox of experienceProjects">
+        <img [src]="exprBox.img" />
+        <h1>{{ exprBox.projectnum }}</h1>
+        <h5>{{ exprBox.type }}</h5>
+      </div>
+      
+    </div>
+  </div>
+</div>
