@@ -1,39 +1,5 @@
 import { Component } from '@angular/core';
 
-// interface LabelHeader {
-//   taglineImg: string;
-//   labelCaseStudy: string;
-//   labelAboutUs: string;
-//   labelHireDeveloper: string;
-//   labelTechnology: string;
-//   labelIndustry: string;
-//   btnHeader: string;
-//   btnHeaderStyle: string;
-//   btnHeaderType: string;
-// }
-
-// interface HeaderContent {
-//   headerContentFirst: string;
-//   headerContentFirstNew: string;
-//   headerContentSecond: string;
-//   headerContentSecondSpan: string;
-//   headerContentParagraph: string;
-//   headeSchedualMeetBtnType: string;
-//   headeSchedualMeetBtnCount: string;
-//   headerDownImages: string;
-// }
-
-// interface ServiceBoxes {
-//   seviceHeader: string;
-//   seviceBoxHead: string;
-//   seviceBoxHeadBold: string;
-//   serviceBox2: ServiceBox2;
-//   serviceBox3: ServiceBox3;
-//   serviceBox4: ServiceBox4;
-//   serviceBox5: ServiceBox5;
-//   serviceBox6: ServiceBox6;
-//   serviceBox7: ServiceBox7;
-// }
 
 // interface ServiceBox2 {
 //   serviceBox2HeadImg: string;
@@ -322,81 +288,58 @@ export class AppComponent {
   title = 'tagline_angular';
 
   labelHeader : string[] = ['Case Study','About Us','Hire Developer','Technology','Industry'];
-  // labelHeader: LabelHeader = {
-  //   taglineImg: '../assets/../assets/images/tagline.png',
-  //   labelCaseStudy: 'Case Study',
-  //   labelAboutUs: 'About Us',
-  //   labelHireDeveloper: 'Hire Developer',
-  //   labelTechnology: 'Technology',
-  //   labelIndustry: 'Industry',
-  //   btnHeader: 'GET QUOTE',
-  //   btnHeaderStyle: 'display: flex; justify-content: end;',
-  //   btnHeaderType: 'button',
-  // };
+
+  ourServices = [
+    {
+      head: 'Find the right offers',
+    },
+    {
+      img: '../assets/images/mobile.png',
+      head: 'Application Management and Modernisation',
+      content:
+        'Here at Tagline, we provide the service of Application management and modernisation for the growth of your business. We update the old application with new approaches, including the latest languages, frameworks, and platforms.',
+      link: 'Learn More ->',
+    },
+
+    {
+      img: '../assets/images/web-design-icon.webp',
+      head: 'Software Product Engineering',
+      content:
+        'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
+      link: 'Learn More ->',
+    },
+
+    {
+      img: '../assets/images/testing-icon.webp',
+      head: 'Agile QA, Automation, and DevOps',
+      content:
+        'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA, Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QA ensures the quality of the software.',
+      link: 'Learn More ->',
+    },
+
+    {
+      img: '../assets/images/uiux-design-icon.webp',
+      head: 'Digital Strategy & Design',
+      content:
+        'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
+      link: 'Learn More ->',
+    },
+
+    {
+      img: '../assets/images/software-development-1.png',
+      head: 'Software outsourcing company',
+      content:
+        'Tagline Infotech is an experienced software outsourcing company that provides services for various businesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
+      link: 'Learn More ->',
+    },
+    {
+      head: "Don't know what to choose?",
+      serviceBox7Span: 'Drop us a line.',
+      button: 'Contact Us',
+    },
+  ];
+
   
-
-  // headerContent: HeaderContent = {
-  //   headerContentFirst: 'Software Development Company',
-  //   headerContentFirstNew: '& IT Consultancy',
-  //   headerContentSecond: 'Serving',
-  //   headerContentSecondSpan: 'Start-UPs To Fortune 500',
-  //   headerContentParagraph:
-  //     'With the help of Innovation and Technology, We give you the power to <br> change the world with your ideas.',
-  //   headeSchedualMeetBtnType: 'button',
-  //   headeSchedualMeetBtnCount: 'Schedule a meeting',
-  //   headerDownImages: '../assets/images/images.png',
-  // };
-
-  // serviceBoxes: ServiceBoxes = {
-  //   seviceHeader: 'Our Services',
-  //   seviceBoxHead: 'Find the',
-  //   seviceBoxHeadBold: 'right offers',
-
-  //   serviceBox2: {
-  //     serviceBox2HeadImg: '../assets/images/mobile.png',
-  //     serviceBox2Head: 'Application Management and Modernisation',
-  //     serviceBox2Content:
-  //       'Here at Tagline, we provide the service of Application management and modernisation for the growth of your business. We update the old application with new approaches, including the latest languages, frameworks, and platforms.',
-  //     serviceBox2Anchor: 'Learn More ->',
-  //   },
-
-  //   serviceBox3: {
-  //     serviceBox3HeadImg: '../assets/images/web-design-icon.webp',
-  //     serviceBox3Head: 'Software Product Engineering',
-  //     serviceBox3Content:
-  //       'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
-  //     serviceBox3Anchor: 'Learn More ->',
-  //   },
-
-  //   serviceBox4: {
-  //     serviceBox4HeadImg: '../assets/images/testing-icon.webp',
-  //     serviceBox4Head: 'Agile QA, Automation, and DevOps',
-  //     serviceBox4Content:
-  //       'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA, Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QA ensures the quality of the software.',
-  //     serviceBox4Anchor: 'Learn More ->',
-  //   },
-
-  //   serviceBox5: {
-  //     serviceBox5HeadImg: '../assets/images/uiux-design-icon.webp',
-  //     serviceBox5Head: 'Digital Strategy & Design',
-  //     serviceBox5Content:
-  //       'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
-  //     serviceBox5Anchor: 'Learn More ->',
-  //   },
-
-  //   serviceBox6: {
-  //     serviceBox6HeadImg: '../assets/images/software-development-1.png',
-  //     serviceBox6Head: 'Software outsourcing company',
-  //     serviceBox6Content:
-  //       'Tagline Infotech is an experienced software outsourcing company that provides services for various businesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
-  //     serviceBox6Anchor: 'Learn More ->',
-  //   },
-  //   serviceBox7: {
-  //     serviceBox7Head: "Don't know what to choose?",
-  //     serviceBox7Span: 'Drop us a line.',
-  //     serviceBox7Btn: 'Contact Us',
-  //   },
-  // };
 
   experience: Experience = {
     exprContent: {
@@ -637,55 +580,7 @@ export class AppComponent {
     contFormDatabtn: 'Send Message',
   };
 
-  ourServices = [
-    {
-      head: 'Find the right offers',
-    },
-    {
-      img: '../assets/images/mobile.png',
-      head: 'Application Management and Modernisation',
-      content:
-        'Here at Tagline, we provide the service of Application management and modernisation for the growth of your business. We update the old application with new approaches, including the latest languages, frameworks, and platforms.',
-      link: 'Learn More ->',
-    },
-
-    {
-      img: '../assets/images/web-design-icon.webp',
-      head: 'Software Product Engineering',
-      content:
-        'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
-      link: 'Learn More ->',
-    },
-
-    {
-      img: '../assets/images/testing-icon.webp',
-      head: 'Agile QA, Automation, and DevOps',
-      content:
-        'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA, Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QA ensures the quality of the software.',
-      link: 'Learn More ->',
-    },
-
-    {
-      img: '../assets/images/uiux-design-icon.webp',
-      head: 'Digital Strategy & Design',
-      content:
-        'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
-      link: 'Learn More ->',
-    },
-
-    {
-      img: '../assets/images/software-development-1.png',
-      head: 'Software outsourcing company',
-      content:
-        'Tagline Infotech is an experienced software outsourcing company that provides services for various businesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
-      link: 'Learn More ->',
-    },
-    {
-      head: "Don't know what to choose?",
-      serviceBox7Span: 'Drop us a line.',
-      button: 'Contact Us',
-    },
-  ];
+  
 
   whyTaglineBox = [
     {
@@ -897,7 +792,7 @@ export class AppComponent {
 
   inputDemo = 'Worked Parent';
 
-  servicesHead: string = 'Our Services';
+  
   blogHeading: string = 'Our Blogs';
   footerEmailSend: string = ' ';
   footerSubscribeBtn: string = 'Subscribe';

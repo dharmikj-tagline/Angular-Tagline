@@ -5,23 +5,7 @@
 
 <!-- ___________________________________________________________ -->
 
-<div class="services">
-  <h1>{{ servicesHead }}</h1>
-  <span class="headerline"></span>
-
-  <div class="boxes">
-    <div class="divcontent divcontent2" *ngFor="let service of ourServices">
-      <div class="flex">
-        <img [src]="service.img" />
-        <h2>{{ service.head }}</h2>
-      </div>
-      <p>
-        {{ service.content }}
-      </p>
-      <a href="#">{{ service.link }}</a>
-      <button>{{ service.button }}</button>
-      <!-- <button ngClass="divcontent7">{{ service.button }}</button> -->
-    </div>
+<app-sevices [serviceBoxes]="ourServices"></app-sevices>
 
     <!-- <div class="divcontent divcontent1" style="border: none">
       <h1 style="text-align: left; line-height: 70px; font-weight: 700">
@@ -99,7 +83,7 @@
       <button>{{ serviceBoxes.serviceBox7.serviceBox7Btn }}</button>
     </div>
   </div> -->
-  </div>
+  <!-- </div> -->
 
   <!-- ___________________________________________________________ -->
 
@@ -775,7 +759,7 @@
   </div>
 
   <router-outlet></router-outlet>
-</div>
+<!-- </div> -->
 
 
 

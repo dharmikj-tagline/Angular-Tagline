@@ -1,0 +1,18 @@
+<div class="services">
+  <h1>{{ servicesHead }}</h1>
+  <span class="headerline"></span>
+
+  <div class="boxes">
+    <div class="divcontent divcontent2" *ngFor="let service of serviceBoxes">
+      <div class="flex">
+        <img [src]="service.img" />
+        <h2>{{ service.head }}</h2>
+      </div>
+      <p>
+        {{ service.content }}
+      </p>
+      <a href="#">{{ service.link }}</a>
+      <button>{{ service.button }}</button>
+    </div>
+  </div>
+</div>
