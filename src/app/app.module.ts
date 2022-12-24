@@ -14,6 +14,8 @@ import { TechnologyBackendComponent } from './technology-backend/technology-back
 import { TechnologyFrontendComponent } from './technology-frontend/technology-frontend.component';
 import { WhyTaglineComponent } from './why-tagline/why-tagline.component';
 import { WhyTaglineBoxesComponent } from './why-tagline-boxes/why-tagline-boxes.component';
+import { ClientWordsComponent } from './client-words/client-words.component';
+import { ReviewBoxesComponent } from './review-boxes/review-boxes.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { WhyTaglineBoxesComponent } from './why-tagline-boxes/why-tagline-boxes.
     TechnologyFrontendComponent,
     WhyTaglineComponent,
     WhyTaglineBoxesComponent,
+    ClientWordsComponent,
+    ReviewBoxesComponent,
     
   ],
   imports: [
