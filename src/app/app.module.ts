@@ -27,6 +27,7 @@ import { FooterHiredeveloperComponent } from './footer-hiredeveloper/footer-hire
 import { FooterTopComponent } from './footer-top/footer-top.component';
 import { FooterLastComponent } from './footer-last/footer-last.component';
 import { ReviewRateStarComponent } from './review-rate-star/review-rate-star.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { ReviewRateStarComponent } from './review-rate-star/review-rate-star.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
