@@ -1,19 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-
-// interface LabelHeader {
-//   taglineImg: string;
-//   labelCaseStudy: string;
-//   labelAboutUs: string;
-//   labelHireDeveloper: string;
-//   labelTechnology: string;
-//   labelIndustry: string;
-//   btnHeader: string;
-//   btnHeaderStyle: string;
-//   btnHeaderType: string;
-// }
-
-
-
 @Component({
   selector: 'app-header-navbar',
   templateUrl: './header-navbar.component.html',

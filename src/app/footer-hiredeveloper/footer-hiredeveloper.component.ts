@@ -1,14 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-interface HireDeveloper {
-  hireHead: string;
-  hirePython: string;
-  hireAngular: string;
-  hireROR: string;
-  hireFlutter: string;
-  hireReact: string;
-  HireReactNative: string;
-}
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer-hiredeveloper',
@@ -22,13 +12,7 @@ export class FooterHiredeveloperComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  hireDeveloper: HireDeveloper = {
-    hireHead: 'Hire Developers',
-    hirePython: 'Hire Python Developer',
-    hireAngular: 'Hire Angular Developer',
-    hireROR: 'Hire ROR Developer',
-    hireFlutter: 'Hire Flutter Developer',
-    hireReact: 'Hire React Js Developer',
-    HireReactNative: 'Hire React Native Developer',
-  };
+  @Input() hireDevelopMenu :string[]=[];
+
+  hireHead: string ='Hire Developers';
 }

@@ -11,7 +11,7 @@
   <app-experience-content></app-experience-content>
 
   <span>
-    <img [src]="experience.exprContent.exprUpperImg" height="490" />
+    <img [src]="exprUpperImg" height="490" />
   </span>
   <app-experience-projects [experienceProjects]="experianseNumBoxs"></app-experience-projects>
 </div>
@@ -19,38 +19,21 @@
 <!-- ____________________________________________________________________ -->
 
 <h1 style="text-align: center; margin: 40px; font-size: 2rem; margin-bottom: 0">
-  {{ technology.technologyHead }}
+  {{ technologyHead }}
 </h1>
 <span class="headerline"></span>
 <div class="row">
   <app-technologies [technologyMenus]="techMenu"></app-technologies>
-  <!-- <div class="menu">
-    <ul>
-      <li class="active" *ngFor="let menu of technologyMenus">
-        <a href="">{{ menu }}</a>
-      </li>
-    </ul>
-  </div> -->
+
   <div class="language">
     <div class="web">
       <h1>Web</h1>
 
-      <!-- <div class="backend">
-        <div class="ror" *ngFor="let backEnd of backEnds">
-          <img [src]="backEnd.img" />
-          <h3>{{ backEnd.language }}</h3>
-        </div>
-        
-      </div> -->
+
       <app-technology-backend [backendLanuages]="backEnds"></app-technology-backend>
 
       <app-technology-frontend [frontendLanuages]="frontEnds"></app-technology-frontend>
-      <!-- <div class="frontend">
-        <div class="react" *ngFor="let frontEnd of frontEnds">
-          <img [src]="frontEnd.img" />
-          <h3>{{ frontEnd.language }}</h3>
-        </div>
-      </div> -->
+
     </div>
   </div>
 </div>
@@ -90,11 +73,11 @@
   <app-footer-top></app-footer-top>
   <div class="division">
     <div>
-      <app-footer-hr-sales></app-footer-hr-sales>
+      <app-footer-hr-sales [hrMenu]="footerHrMenu" [salesMenu]="footerSalesMenu"></app-footer-hr-sales>
     </div>
-    <app-footer-help></app-footer-help>
-    <app-footer-sevices></app-footer-sevices>
-    <app-footer-hiredeveloper></app-footer-hiredeveloper>
+    <app-footer-help [helpMenu]="footerHelpMenu"></app-footer-help>
+    <app-footer-sevices [Services]="footerServicesMenu"></app-footer-sevices>
+    <app-footer-hiredeveloper [hireDevelopMenu]="footerHireDevlopMenu"></app-footer-hiredeveloper>
   </div>
 
   <app-footer-last></app-footer-last>

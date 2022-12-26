@@ -1,39 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-
-interface HRInquiry {
-  hrHead: string;
-  hrEmail: string;
-  hrMobile: string;
-}
-
-interface SalesInquiry {
-  salesHead: string;
-  salesEmail: string;
-  salesCompany: string;
-}
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer-hr-sales',
   templateUrl: './footer-hr-sales.component.html',
-  styleUrls: ['./footer-hr-sales.component.scss']
+  styleUrls: ['./footer-hr-sales.component.scss'],
 })
 export class FooterHrSalesComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
+  @Input() hrMenu: string[] = [];
+  @Input() salesMenu: string[] = [];
 
-  hrInquiry: HRInquiry = {
-    hrHead: 'HR Inquiry',
-    hrEmail: 'hr@taglineinfotech.com',
-    hrMobile: '+91 6354362521',
-  };
-
-  salesInquiry: SalesInquiry = {
-    salesHead: 'Sales Inquiry',
-    salesEmail: 'solutions@taglineinfotech.com',
-    salesCompany: 'Tagline infotech',
-  };
-
+  hrHead: string = 'HR Inquiry';
+  salesHead: string = 'Sales Inquiry';
 }

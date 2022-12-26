@@ -1,24 +1,19 @@
 <div class="hr">
-    <h3>{{ hrInquiry.hrHead }}</h3>
-    <ul>
-      <li>
-        <a href=""><i class="bi bi-telephone-fill"></i>&nbsp;
-          {{ hrInquiry.hrEmail }}</a>
-      </li>
-      <li>
-        <a href=""><i class="bi bi-envelope-fill"></i>&nbsp;
-          {{ hrInquiry.hrMobile }}</a>
-      </li>
-    </ul>
-  </div>
-  <div class="sales">
-    <h3>{{ salesInquiry.salesHead }}</h3>
-    <ul>
-      <li>
-        <a href=""> {{ salesInquiry.salesEmail }}</a>
-      </li>
-      <li>
-        <a href=""> {{ salesInquiry.salesCompany }}</a>
-      </li>
-    </ul>
-  </div>
+  <h3>{{ hrHead }}</h3>
+  <ul>
+    <li *ngFor="let menu of hrMenu">
+      <a href=""><i class="bi bi-telephone-fill"></i>&nbsp;
+        {{ menu }}</a>
+    </li>
+
+  </ul>
+</div>
+<div class="sales">
+  <h3>{{ salesHead }}</h3>
+  <ul>
+    <li *ngFor="let menu of hrMenu">
+      <a href=""> {{ menu}}</a>
+    </li>
+
+  </ul>
+</div>

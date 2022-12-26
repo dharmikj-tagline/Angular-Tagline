@@ -1,13 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
-interface Services{
-  img?: string ,
-  head?: string ,
-  content?: string ,
-  link?: string ,
-  serviceBox7Span?: string ,
-  button?: string ,
-}
+import { Services } from '../common';
 
 @Component({
   selector: 'app-sevices',
@@ -25,5 +17,6 @@ export class SevicesComponent implements OnInit {
 
 
   servicesHead : string ='Our Services';
+  
 
 }

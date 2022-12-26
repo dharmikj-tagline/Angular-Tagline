@@ -1,115 +1,77 @@
-
-
 .topbar {
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(196, 196, 196, 0) .01%, rgba(217, 97, 34, .2) 100%), url(../assets/images/topimg.webp);
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(196, 196, 196, 0) 0.01%,
+      rgba(217, 97, 34, 0.2) 100%
+    ),
+    url(../assets/images/topimg.webp);
 }
-
-
-
-
-
-
 
 /* ________________________________________________________________________ */
 .experience {
-    display: flex;
-    width: 100%;
-    min-height: 68vh;
+  display: flex;
+  width: 100%;
+  min-height: 68vh;
 }
 
-
-
-.experience span{
-    z-index: 10;
-    position: absolute;
-    margin-left:43%;
-    margin-top: 78px;
+.experience span {
+  z-index: 10;
+  position: absolute;
+  margin-left: 43%;
+  margin-top: 78px;
 }
-
 
 /* ____________________________________________________________________ */
 
 .row {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .row app-technologies {
-    width: 25%;
-    box-shadow: 5px 0 #d66f37,0 0 10px rgb(168, 167, 167);
+  width: 25%;
+  box-shadow: 5px 0 #d66f37, 0 0 10px rgb(168, 167, 167);
 }
-
-
-
 
 .row .language {
-    width: 50%;
-    box-shadow: 0 0 10px rgb(168, 167, 167);;
-    padding: 40px;
+  width: 50%;
+  box-shadow: 0 0 10px rgb(168, 167, 167);
+  padding: 40px;
 }
-
-
-
-
-
-
-
 
 /* ______________________________________________ */
 
-
-.reviews{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 70px;
+.reviews {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
 }
-
-
-
-
-
-
-
-
-
 
 /* ____________________________________________ */
 
 .contactus {
-    display: flex;
-    justify-content: center;
-    margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
 }
-
-
 
 /* __________________________________________________________ */
 
 .footer {
-    justify-content: center;
-    margin-top: 40px;
-    box-shadow: 0 0 6px rgb(168, 167, 167);
-    padding: 30px;
+  justify-content: center;
+  margin-top: 40px;
+  box-shadow: 0 0 6px rgb(168, 167, 167);
+  padding: 30px;
 }
-
 
 .footer .division {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
 }
 
 
-.lastfooterdiv {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 30px;
-}
-
-.lastfooterdiv div a i {
-    padding: 0 5px 0 10px;
-    font-size: 20px;
-}

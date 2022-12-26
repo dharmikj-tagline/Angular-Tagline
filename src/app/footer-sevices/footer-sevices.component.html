@@ -1,20 +1,9 @@
 <div class="service">
-    <h3>{{ services.servicesHead }}</h3>
+    <h3>{{servicesHead }}</h3>
     <ul>
-      <li>
-        <a href="">{{ services.servicesMobile }}</a>
+      <li *ngFor="let menu of Services">
+        <a href="">{{ menu }}</a>
       </li>
-      <li>
-        <a href="">{{ services.servicesWeb }}</a>
-      </li>
-      <li>
-        <a href="">{{ services.servicesDesign }}</a>
-      </li>
-      <li>
-        <a href="">{{ services.servicesUiUx }}</a>
-      </li>
-      <li>
-        <a href="">{{ services.servicesDigital }}</a>
-      </li>
+      
     </ul>
   </div>

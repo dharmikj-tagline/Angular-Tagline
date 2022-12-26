@@ -26,6 +26,7 @@ import { FooterSevicesComponent } from './footer-sevices/footer-sevices.componen
 import { FooterHiredeveloperComponent } from './footer-hiredeveloper/footer-hiredeveloper.component';
 import { FooterTopComponent } from './footer-top/footer-top.component';
 import { FooterLastComponent } from './footer-last/footer-last.component';
+import { ReviewRateStarComponent } from './review-rate-star/review-rate-star.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { FooterLastComponent } from './footer-last/footer-last.component';
     FooterHiredeveloperComponent,
     FooterTopComponent,
     FooterLastComponent,
+    ReviewRateStarComponent,
     
   ],
   imports: [

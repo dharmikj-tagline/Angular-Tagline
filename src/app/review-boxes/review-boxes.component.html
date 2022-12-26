@@ -1,25 +1,15 @@
+<div class="reviewsboxes">
+  <div class="revbox" *ngFor="let reviews of reviewBoxesDetail">
 
- <div class="reviewsboxes">
-    <div class="revbox" *ngFor="let reviews of reviewBoxesDetail">
-      <div class="rating">
-        <h3>{{ reviews.rate }}</h3>
-        <div class="icon">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-      </div>
+    <app-review-rate-star></app-review-rate-star>
 
-      <p>{{ reviews.reviewWord }}</p>
-      <small>{{ reviews.company }}</small>
+    <p>{{ reviews.reviewWord }}</p>
+    <small>{{ reviews.company }}</small>
 
-      <div class="verified">
-        <i class="bi bi-patch-check-fill"></i>&nbsp;
-        <p>{{ reviews.veried }}</p>
-      </div>
+    <div class="verified">
+      <i class="bi bi-patch-check-fill"></i>&nbsp;
+      <p>{{ reviews.veried }}</p>
     </div>
-
-    
   </div>
+
+</div>
