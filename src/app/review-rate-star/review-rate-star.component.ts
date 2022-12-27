@@ -32,6 +32,6 @@ export class ReviewRateStarComponent implements OnInit {
 
   // rateStar: string = "3.0";
 
-  rateStar:number=0;
+  rateStar:number=5;
 }
 

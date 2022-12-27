@@ -1,23 +1,26 @@
-//  .fulldiv1{
-//     display: flex;
-//     flex-direction: row;
-//     width: 450px;
-//  }
+ .fulldiv1{
+    display: flex;
+    flex-direction: row;
+   min-width: 550px;
+   flex-wrap: wrap;
+   padding-right: 100px;
+   padding-top: 50px;
+ }
  
  .numberexp {
-    background: linear-gradient(to left, #eb8f5e, #ffffffc8);
+    background: linear-gradient(to left, #eb8f5e, #eeeeeec8);
     color: #d66f37;
     font-family: poppins, sans-serif;
     min-height: 68vh;
 }
 
- .numberexp .fulldiv1
- {
-    display: flex;
-    padding: 60px 50px 0px 150px;
-    flex-direction: row;
+//  .numberexp .fulldiv1
+//  {
+//     display: flex;
+//     padding: 60px 50px 0px 150px;
+//     flex-direction: row;
     
-}
+// }
 
 
  .numberexp .fulldiv1 .div1 h1 {

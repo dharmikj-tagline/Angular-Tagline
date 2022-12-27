@@ -14,9 +14,6 @@ export class SevicesComponent implements OnInit {
   }
 
   @Input() serviceBoxes : Services[]=[];
-
-
   servicesHead : string ='Our Services';
   
-
 }
