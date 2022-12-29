@@ -11,6 +11,7 @@ export interface ContactFormDetail {
   country: string;
   place: string;
   mobile: string;
+  
 }
 
 export interface Blogs {
