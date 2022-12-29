@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { FooterService } from '../services/footer.service';
 
 @Component({
   selector: 'app-footer-hr-sales',
@@ -7,12 +7,18 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./footer-hr-sales.component.scss'],
 })
 export class FooterHrSalesComponent implements OnInit {
-  constructor(private dataService: DataService) {}
+  constructor(private footerService: FooterService) {}
 
-  ngOnInit(): void {}
+   hrMenu: string[] = [];
+   salesMenu: string[] = [];
 
-  @Input() hrMenu: string[] = [];
-  @Input() salesMenu: string[] = [];
+  ngOnInit(): void {
+    this.hrMenu=this.footerService.footerHrMenu;
+    this.salesMenu=this.footerService.footerSalesMenu;
+  }
+
+  // @Input() hrMenu: string[] = [];
+  // @Input() salesMenu: string[] = [];
 
   hrHead: string = 'HR Inquiry';
   salesHead: string = 'Sales Inquiry';

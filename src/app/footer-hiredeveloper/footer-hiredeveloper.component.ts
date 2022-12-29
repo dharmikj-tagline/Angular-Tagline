@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { FooterService } from '../services/footer.service';
 
 @Component({
   selector: 'app-footer-hiredeveloper',
@@ -8,12 +8,15 @@ import { DataService } from '../services/data.service';
 })
 export class FooterHiredeveloperComponent implements OnInit {
 
-  constructor(private dataService: DataService) {}
+  constructor(private footerService: FooterService) {}
+
+  hireDevelopMenu :string[]=[];
 
   ngOnInit(): void {
+    this.hireDevelopMenu=this.footerService.footerHireDevlopMenu;
   }
 
-  @Input() hireDevelopMenu :string[]=[];
+  // @Input() hireDevelopMenu :string[]=[];
 
   hireHead: string ='Hire Developers';
 }

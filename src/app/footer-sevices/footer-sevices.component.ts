@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { FooterService } from '../services/footer.service';
 
 @Component({
   selector: 'app-footer-sevices',
@@ -7,10 +7,14 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./footer-sevices.component.scss'],
 })
 export class FooterSevicesComponent implements OnInit {
-  constructor(private dataService: DataService) {}
+  constructor(private footerService: FooterService) {}
 
-  ngOnInit(): void {}
-  @Input() Services: string[] = [];
+   Services: string[] = [];
+
+  ngOnInit(): void {
+    this.Services=this.footerService.footerServicesMenu;
+  }
+  // @Input() Services: string[] = [];
 
   servicesHead: string = 'Services';
 }

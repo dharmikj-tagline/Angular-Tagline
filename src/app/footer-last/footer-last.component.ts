@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { FooterService } from '../services/footer.service';
 
 @Component({
   selector: 'app-footer-last',
@@ -8,7 +8,7 @@ import { DataService } from '../services/data.service';
 })
 export class FooterLastComponent implements OnInit {
 
-  constructor(private dataService: DataService) {}
+  constructor(private footerService: FooterService) {}
 
   ngOnInit(): void {
   }
