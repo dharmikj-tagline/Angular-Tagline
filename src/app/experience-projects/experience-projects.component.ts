@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { ExperianseNumBoxs } from '../common';
+import { ExperienceService } from '../services/experience.service';
 
 @Component({
   selector: 'app-experience-projects',
@@ -8,9 +9,12 @@ import { DataService } from '../services/data.service';
 })
 export class ExperienceProjectsComponent implements OnInit {
 
-  constructor(private dataService: DataService) {}
+  constructor(private experienceService: ExperienceService) {}
+
+   experienceProjects : ExperianseNumBoxs[]=[];
 
   ngOnInit(): void {
+    this.experienceProjects=this.experienceService.experianseNumBoxs;
   }
-  @Input() experienceProjects : any;
+  // @Input() experienceProjects : any;
 }
