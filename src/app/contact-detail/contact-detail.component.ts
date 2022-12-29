@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ContactFormDetail } from '../common';
 import { ContactService } from '../services/contact.service';
-import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-contact-detail',
@@ -17,5 +16,7 @@ export class ContactDetailComponent implements OnInit {
     this.contactForm=this.contactService.contactFormDetail;
   }
   // @Input() contactForm:any;
+
+  contactdetailHead: string ='Our Global Presence';
 
 }

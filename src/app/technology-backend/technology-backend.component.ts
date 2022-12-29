@@ -1,10 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Techlanguage } from '../common';
 import { TechnologyService } from '../services/technology.service';
 
-export interface Backend{
-  img: string,
-  language : string
-}
+
 
 @Component({
   selector: 'app-technology-backend',
@@ -15,7 +13,7 @@ export class TechnologyBackendComponent implements OnInit {
 
   constructor(private technologyService: TechnologyService) {}
 
-  backendLanuages : Backend[] =[] ;
+  backendLanuages : Techlanguage[] =[] ;
 
   ngOnInit(): void {
     this.backendLanuages=this.technologyService.backEnds;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Blogs, ContactFormDetail, ExperianseNumBoxs, OurServices, ReviewBoxes, Techlanguage, WhyTaglineBox } from './common';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,9 +8,6 @@ import { Blogs, ContactFormDetail, ExperianseNumBoxs, OurServices, ReviewBoxes, 
 export class AppComponent {
   title = 'tagline_angular';
 
-  
-
   technologyHead: string = 'Our Technologies';
   exprUpperImg: string = '../assets/images/woman.webp';
-
 }

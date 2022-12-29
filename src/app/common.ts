@@ -11,7 +11,6 @@ export interface ContactFormDetail {
   country: string;
   place: string;
   mobile: string;
-  
 }
 
 export interface Blogs {
@@ -57,4 +56,3 @@ export interface ReviewBoxes {
   company: string;
   veried: string;
 }
-

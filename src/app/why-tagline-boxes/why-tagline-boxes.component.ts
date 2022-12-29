@@ -1,12 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { WhyTaglineBox } from '../common';
 import { WhytaglineService } from '../services/whytagline.service';
-interface WhyTaglineBoxs{
-  img : string,
-  num ?: string,
-  head : string,
-  content ?: string,
-  button ?: string,
-}
+
 @Component({
   selector: 'app-why-tagline-boxes',
   templateUrl: './why-tagline-boxes.component.html',
@@ -16,7 +11,7 @@ export class WhyTaglineBoxesComponent implements OnInit {
 
   constructor(private whytaglineService: WhytaglineService) {}
 
- whyTaglineBoxs : WhyTaglineBoxs[]=[];
+ whyTaglineBoxs : WhyTaglineBox[]=[];
 
   ngOnInit(): void {
     this.whyTaglineBoxs=this.whytaglineService.whyTaglineBox;
