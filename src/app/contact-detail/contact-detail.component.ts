@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ContactFormDetail } from '../common';
+import { ContactService } from '../services/contact.service';
 import { DataService } from '../services/data.service';
 
 @Component({
@@ -9,10 +10,11 @@ import { DataService } from '../services/data.service';
 })
 export class ContactDetailComponent implements OnInit {
 
-  constructor(private dataService: DataService) {}
+  constructor(private contactService: ContactService) {}
 
   contactForm:ContactFormDetail[]=[];
   ngOnInit(): void {
+    this.contactForm=this.contactService.contactFormDetail;
   }
   // @Input() contactForm:any;
 
