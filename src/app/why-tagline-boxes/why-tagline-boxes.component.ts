@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { WhytaglineService } from '../services/whytagline.service';
 interface WhyTaglineBoxs{
   img : string,
   num ?: string,
@@ -14,9 +14,12 @@ interface WhyTaglineBoxs{
 })
 export class WhyTaglineBoxesComponent implements OnInit {
 
-  constructor(private dataService: DataService) {}
+  constructor(private whytaglineService: WhytaglineService) {}
+
+ whyTaglineBoxs : WhyTaglineBoxs[]=[];
 
   ngOnInit(): void {
+    this.whyTaglineBoxs=this.whytaglineService.whyTaglineBox;
   }
-@Input() whyTaglineBoxs : WhyTaglineBoxs[]=[];
+// @Input() whyTaglineBoxs : WhyTaglineBoxs[]=[];
 }

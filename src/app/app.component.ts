@@ -89,118 +89,118 @@ export class AppComponent {
   //   },
   // ];
 
-  techMenu : string[] = [
-    'Web',
-    'Mobile',
-    'Desktop',
-    'Plateform',
-    'Database / Data Storage',
-    'Big Data',
-    'Machine Learning',
-    'DevOps',
-    'Clouds',
-  ];
+  // techMenu : string[] = [
+  //   'Web',
+  //   'Mobile',
+  //   'Desktop',
+  //   'Plateform',
+  //   'Database / Data Storage',
+  //   'Big Data',
+  //   'Machine Learning',
+  //   'DevOps',
+  //   'Clouds',
+  // ];
 
-  backEnds :Techlanguage[]= [
-    {
-      img: '../assets/images/ror.png',
-      language: 'Ruby on Rails',
-    },
-    {
-      img: '../assets/images/python.png',
-      language: 'Python',
-    },
-    {
-      img: '../assets/images/node_js.svg',
-      language: 'Node Js',
-    },
-    {
-      img: '../assets/images/php.png',
-      language: 'PHP',
-    },
-    {
-      img: '../assets/images/android-java.png',
-      language: 'Java',
-    },
-    {
-      img: '../assets/images/go.png',
-      language: 'Go Language',
-    },
-  ];
+  // backEnds :Techlanguage[]= [
+  //   {
+  //     img: '../assets/images/ror.png',
+  //     language: 'Ruby on Rails',
+  //   },
+  //   {
+  //     img: '../assets/images/python.png',
+  //     language: 'Python',
+  //   },
+  //   {
+  //     img: '../assets/images/node_js.svg',
+  //     language: 'Node Js',
+  //   },
+  //   {
+  //     img: '../assets/images/php.png',
+  //     language: 'PHP',
+  //   },
+  //   {
+  //     img: '../assets/images/android-java.png',
+  //     language: 'Java',
+  //   },
+  //   {
+  //     img: '../assets/images/go.png',
+  //     language: 'Go Language',
+  //   },
+  // ];
 
-  frontEnds :Techlanguage[]= [
-    {
-      img: '../assets/images/react-js.png',
-      language: 'React',
-    },
-    {
-      img: '../assets/images/angular-icon.png',
-      language: 'Angular',
-    },
-    {
-      img: '../assets/images/typescript-icon.png',
-      language: 'Typescipt',
-    },
-    {
-      img: '../assets/images/vue-js.png',
-      language: 'Vue Js',
-    },
-    {
-      img: '../assets/images/meter-js.png',
-      language: 'Mateor',
-    },
-    {
-      img: '../assets/images/javascript-icon.png',
-      language: 'Javascript',
-    },
-    {
-      img: '../assets/images/html5.png',
-      language: 'Html',
-    },
-  ];
+  // frontEnds :Techlanguage[]= [
+  //   {
+  //     img: '../assets/images/react-js.png',
+  //     language: 'React',
+  //   },
+  //   {
+  //     img: '../assets/images/angular-icon.png',
+  //     language: 'Angular',
+  //   },
+  //   {
+  //     img: '../assets/images/typescript-icon.png',
+  //     language: 'Typescipt',
+  //   },
+  //   {
+  //     img: '../assets/images/vue-js.png',
+  //     language: 'Vue Js',
+  //   },
+  //   {
+  //     img: '../assets/images/meter-js.png',
+  //     language: 'Mateor',
+  //   },
+  //   {
+  //     img: '../assets/images/javascript-icon.png',
+  //     language: 'Javascript',
+  //   },
+  //   {
+  //     img: '../assets/images/html5.png',
+  //     language: 'Html',
+  //   },
+  // ];
 
-  whyTaglineBox:WhyTaglineBox[] = [
-    {
-      img: '../assets/images/choose-roadmap.png ',
-      num: '01',
-      head: ' Progressive Roadmap',
-      content:
-        'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive ',
-    },
-    {
-      img: '../assets/images/choose-project.png ',
-      num: '02',
-      head: 'Efficient Project Management ',
-      content:
-        'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently ',
-    },
-    {
-      img: '../assets/images/choose-flexible.svg ',
-      num: '03 ',
-      head: 'Flexible Engagement Model ',
-      content:
-        ' We provide flexible engagement models so that clients can hire developers for their projects. These engagement models are flexible so if you aren’t satisfied with any model you can switch to another.',
-    },
-    {
-      img: '../assets/images/choose-cost.png ',
-      num: ' 04',
-      head: 'Cost-Effective ',
-      content:
-        'Our team of developers provides the best development services at affordable prices. We believe that high-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring ',
-    },
-    {
-      img: '../assets/images/choose-delivery.png',
-      num: '05 ',
-      head: 'Consistent Delivery ',
-      content:
-        'Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements. ',
-    },
-    {
-      img: '../assets/images/choose-delivery.png',
-      head: 'Empower Your Business with Dedicated Developers ',
-      button: 'Talk to our Expert',
-    },
-  ];
+  // whyTaglineBox:WhyTaglineBox[] = [
+  //   {
+  //     img: '../assets/images/choose-roadmap.png ',
+  //     num: '01',
+  //     head: ' Progressive Roadmap',
+  //     content:
+  //       'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive ',
+  //   },
+  //   {
+  //     img: '../assets/images/choose-project.png ',
+  //     num: '02',
+  //     head: 'Efficient Project Management ',
+  //     content:
+  //       'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently ',
+  //   },
+  //   {
+  //     img: '../assets/images/choose-flexible.svg ',
+  //     num: '03 ',
+  //     head: 'Flexible Engagement Model ',
+  //     content:
+  //       ' We provide flexible engagement models so that clients can hire developers for their projects. These engagement models are flexible so if you aren’t satisfied with any model you can switch to another.',
+  //   },
+  //   {
+  //     img: '../assets/images/choose-cost.png ',
+  //     num: ' 04',
+  //     head: 'Cost-Effective ',
+  //     content:
+  //       'Our team of developers provides the best development services at affordable prices. We believe that high-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring ',
+  //   },
+  //   {
+  //     img: '../assets/images/choose-delivery.png',
+  //     num: '05 ',
+  //     head: 'Consistent Delivery ',
+  //     content:
+  //       'Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements. ',
+  //   },
+  //   {
+  //     img: '../assets/images/choose-delivery.png',
+  //     head: 'Empower Your Business with Dedicated Developers ',
+  //     button: 'Talk to our Expert',
+  //   },
+  // ];
 
   reviewBoxes:ReviewBoxes[] = [
     {
