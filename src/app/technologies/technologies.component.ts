@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { TechnologyService } from '../services/technology.service';
 
 @Component({
   selector: 'app-technologies',
@@ -8,10 +8,13 @@ import { DataService } from '../services/data.service';
 })
 export class TechnologiesComponent implements OnInit {
 
-  constructor(private dataService: DataService) {}
+  constructor(private technologyService: TechnologyService) {}
+
+   technologyMenus : string[]=[];
 
   ngOnInit(): void {
+    this.technologyMenus=this.technologyService.techMenu;
   }
    
-  @Input() technologyMenus : string[]=[];
+  // @Input() technologyMenus : string[]=[];
 }
