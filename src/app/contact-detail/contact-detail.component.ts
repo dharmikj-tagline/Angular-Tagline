@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ContactFormDetail } from '../common';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-contact-detail',
@@ -7,10 +9,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ContactDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) {}
 
+  contactForm:ContactFormDetail[]=[];
   ngOnInit(): void {
   }
-  @Input() contactForm:any;
+  // @Input() contactForm:any;
 
 }

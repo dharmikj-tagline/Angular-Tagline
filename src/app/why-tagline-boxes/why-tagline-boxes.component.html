@@ -1,13 +1,13 @@
 <div class="empowers">
-    <div class="empowerbox" *ngFor="let tagbox of whyTaglineBoxs">
-      <div class="imgnumflex">
-        <img [src]="tagbox.img" />
-        <h1>{{ tagbox.num }}</h1>
-      </div>
-      <h2>{{ tagbox.head }}</h2>
-      <p>
-        {{ tagbox.content }}
-      </p>
-      <button>{{ tagbox.button }}</button>
+  <div class="empowerbox" *ngFor="let tagbox of whyTaglineBoxs">
+    <div class="imgnumflex">
+      <img [src]="tagbox.img" />
+      <h1>{{ tagbox.num }}</h1>
     </div>
+    <h2>{{ tagbox.head }}</h2>
+    <p>
+      {{ tagbox.content }}
+    </p>
+    <button>{{ tagbox.button }}</button>
+  </div>
 </div>

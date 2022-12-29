@@ -56,3 +56,4 @@ export interface ReviewBoxes {
   company: string;
   veried: string;
 }
+

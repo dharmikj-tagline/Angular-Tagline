@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-footer-sevices',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./footer-sevices.component.scss'],
 })
 export class FooterSevicesComponent implements OnInit {
-  constructor() {}
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {}
   @Input() Services: string[] = [];

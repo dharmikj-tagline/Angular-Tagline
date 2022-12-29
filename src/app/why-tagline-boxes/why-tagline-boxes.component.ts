@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 interface WhyTaglineBoxs{
   img : string,
   num ?: string,
@@ -13,7 +14,7 @@ interface WhyTaglineBoxs{
 })
 export class WhyTaglineBoxesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
   }

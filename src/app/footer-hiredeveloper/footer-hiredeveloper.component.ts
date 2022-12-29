@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-footer-hiredeveloper',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FooterHiredeveloperComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
   }

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 interface ReviewBox {
   rate: string;
@@ -12,8 +13,7 @@ interface ReviewBox {
   styleUrls: ['./review-boxes.component.scss'],
 })
 export class ReviewBoxesComponent implements OnInit {
-  constructor() {}
-
+  constructor(private dataService: DataService) {}
   ngOnInit(): void {}
 
   @Input() reviewBoxesDetail: ReviewBox[] = [];

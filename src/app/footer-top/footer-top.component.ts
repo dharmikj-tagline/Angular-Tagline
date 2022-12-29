@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 interface Footer {
   footerTop: string;
@@ -12,7 +13,7 @@ interface Footer {
 })
 export class FooterTopComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
   }

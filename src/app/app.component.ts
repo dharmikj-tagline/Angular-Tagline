@@ -8,63 +8,63 @@ import { Blogs, ContactFormDetail, ExperianseNumBoxs, OurServices, ReviewBoxes, 
 export class AppComponent {
   title = 'tagline_angular';
 
-  labelHeader: string[] = [
-    'Case Study',
-    'About Us',
-    'Hire Developer',
-    'Technology',
-    'Industry',
-  ];
+  // labelHeader: string[] = [
+  //   'Case Study',
+  //   'About Us',
+  //   'Hire Developer',
+  //   'Technology',
+  //   'Industry',
+  // ];
 
-  ourServices :OurServices[] = [
-    {
-      head: 'Find the right offers',
-    },
-    {
-      img: '../assets/images/mobile.png',
-      head: 'Application Management and Modernisation',
-      content:
-        'Here at Tagline, we provide the service of Application management and modernisation for the growth of your business. We update the old application with new approaches, including the latest languages, frameworks, and platforms.',
-      link: 'Learn More ->',
-    },
+  // ourServices :OurServices[] = [
+  //   {
+  //     head: 'Find the right offers',
+  //   },
+  //   {
+  //     img: '../assets/images/mobile.png',
+  //     head: 'Application Management and Modernisation',
+  //     content:
+  //       'Here at Tagline, we provide the service of Application management and modernisation for the growth of your business. We update the old application with new approaches, including the latest languages, frameworks, and platforms.',
+  //     link: 'Learn More ->',
+  //   },
 
-    {
-      img: '../assets/images/web-design-icon.webp',
-      head: 'Software Product Engineering',
-      content:
-        'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
-      link: 'Learn More ->',
-    },
+  //   {
+  //     img: '../assets/images/web-design-icon.webp',
+  //     head: 'Software Product Engineering',
+  //     content:
+  //       'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
+  //     link: 'Learn More ->',
+  //   },
 
-    {
-      img: '../assets/images/testing-icon.webp',
-      head: 'Agile QA, Automation, and DevOps',
-      content:
-        'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA, Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QA ensures the quality of the software.',
-      link: 'Learn More ->',
-    },
+  //   {
+  //     img: '../assets/images/testing-icon.webp',
+  //     head: 'Agile QA, Automation, and DevOps',
+  //     content:
+  //       'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA, Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QA ensures the quality of the software.',
+  //     link: 'Learn More ->',
+  //   },
 
-    {
-      img: '../assets/images/uiux-design-icon.webp',
-      head: 'Digital Strategy & Design',
-      content:
-        'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
-      link: 'Learn More ->',
-    },
+  //   {
+  //     img: '../assets/images/uiux-design-icon.webp',
+  //     head: 'Digital Strategy & Design',
+  //     content:
+  //       'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
+  //     link: 'Learn More ->',
+  //   },
 
-    {
-      img: '../assets/images/software-development-1.png',
-      head: 'Software outsourcing company',
-      content:
-        'Tagline Infotech is an experienced software outsourcing company that provides services for various businesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
-      link: 'Learn More ->',
-    },
-    {
-      head: "Don't know what to choose?",
-      serviceBox7Span: 'Drop us a line.',
-      button: 'Contact Us',
-    },
-  ];
+  //   {
+  //     img: '../assets/images/software-development-1.png',
+  //     head: 'Software outsourcing company',
+  //     content:
+  //       'Tagline Infotech is an experienced software outsourcing company that provides services for various businesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
+  //     link: 'Learn More ->',
+  //   },
+  //   {
+  //     head: "Don't know what to choose?",
+  //     serviceBox7Span: 'Drop us a line.',
+  //     button: 'Contact Us',
+  //   },
+  // ];
 
   experianseNumBoxs: ExperianseNumBoxs[] = [
     {
@@ -246,37 +246,37 @@ export class AppComponent {
     },
   ];
 
-  blogs :Blogs[] = [
-    {
-      img: '../assets/images/Python-vs-Java.png',
-      language: 'Python',
-      date: '15/06/2021',
-      title: 'Python vs Java Comparison Of',
-      content:
-        'Quick Summary The most difficult decision for an entrepreneur is deciding on a programming...',
-      link: 'Read More ->',
-    },
+  // blogs :Blogs[] = [
+  //   {
+  //     img: '../assets/images/Python-vs-Java.png',
+  //     language: 'Python',
+  //     date: '15/06/2021',
+  //     title: 'Python vs Java Comparison Of',
+  //     content:
+  //       'Quick Summary The most difficult decision for an entrepreneur is deciding on a programming...',
+  //     link: 'Read More ->',
+  //   },
 
-    {
-      img: '../assets/images/Node.js-Application.png',
-      language: 'Node Js',
-      date: '9/12/22',
-      title: 'Best Practices for Node.js Application Development:...',
-      content:
-        'Quick Summary Want to know about node js architecture and node js architecture best',
-      link: 'Read More ->',
-    },
+  //   {
+  //     img: '../assets/images/Node.js-Application.png',
+  //     language: 'Node Js',
+  //     date: '9/12/22',
+  //     title: 'Best Practices for Node.js Application Development:...',
+  //     content:
+  //       'Quick Summary Want to know about node js architecture and node js architecture best',
+  //     link: 'Read More ->',
+  //   },
 
-    {
-      img: '../assets/images/Kotlin-vs-Java.png',
-      language: 'RoR',
-      date: '9/12/22',
-      title: 'JavaScript vs Ruby On Rails: What...',
-      content:
-        'Quick Summary: Ruby on Rails and JavaScript both languages are both widely popular among',
-      link: 'Read More ->',
-    },
-  ];
+  //   {
+  //     img: '../assets/images/Kotlin-vs-Java.png',
+  //     language: 'RoR',
+  //     date: '9/12/22',
+  //     title: 'JavaScript vs Ruby On Rails: What...',
+  //     content:
+  //       'Quick Summary: Ruby on Rails and JavaScript both languages are both widely popular among',
+  //     link: 'Read More ->',
+  //   },
+  // ];
 
   contactFormDetail:ContactFormDetail[]= [
     {
@@ -329,4 +329,5 @@ export class AppComponent {
 
   technologyHead: string = 'Our Technologies';
   exprUpperImg: string = '../assets/images/woman.webp';
+
 }

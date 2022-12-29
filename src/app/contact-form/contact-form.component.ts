@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent implements OnInit {
-  constructor() {}
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {}
   contFormDataHead: string = 'Get Your Free Quote Today';

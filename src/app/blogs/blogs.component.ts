@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 interface Blogs {
     img: string;
@@ -15,11 +16,12 @@ interface Blogs {
 })
 export class BlogsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) {}
 
+  blogsBox : Blogs[]=[];
   ngOnInit(): void {
   }
 
-@Input() blogsBox : Blogs[]=[];
+// @Input() blogsBox : Blogs[]=[];
 blogHeading: string = 'Our Blogs';
 }

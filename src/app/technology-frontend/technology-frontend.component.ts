@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 interface Frontend{
   img : string,
@@ -11,7 +12,7 @@ interface Frontend{
 })
 export class TechnologyFrontendComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
   }
